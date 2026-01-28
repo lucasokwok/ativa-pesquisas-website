@@ -1,73 +1,142 @@
-# React + TypeScript + Vite
+# Ativa Pesquisas — Institutional Website (Portfolio)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An institutional “showcase” website for **Ativa Pesquisas**, built as a portfolio project with a strong emphasis on technical credibility (biocorrosion mitigation, ecological by-products, alternative binders, and sustainable durability in aggressive environments).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- **React + Vite**
+- **TypeScript**
+- **React Router DOM** (multi-page routing)
+- **Tailwind CSS v4** via **@tailwindcss/vite** (no `tailwindcss init -p`)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Pages (v1 sitemap)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Home
+- Technology
+- Applications
+- About
+- Projects
+- Contact
+- NotFound (404 fallback)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Requirements
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Node.js (LTS recommended)**
+- **npm** (bundled with Node)
+
+Check versions:
+
+```bash
+node -v
+npm -v
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Run Locally (Development / Testing)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Install dependencies:
+
+```bash
+npm install
 ```
+
+2. Start the dev server:
+
+```bash
+npm run dev
+```
+
+Vite will print the local URL (commonly `http://localhost:5173`).
+
+> Vite uses HMR (Hot Module Replacement): save your files and the browser updates instantly.
+
+---
+
+## Production Build & Preview
+
+Build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+---
+
+## Project Structure (Essential)
+
+```txt
+src/
+  assets/           # images (e.g., home-hero-01.webp, etc.)
+  components/
+    Header.tsx
+    Footer.tsx
+  layouts/
+    SiteLayout.tsx
+  pages/
+    Home.tsx
+    Technology.tsx
+    Applications.tsx
+    About.tsx
+    Projects.tsx
+    Contact.tsx
+    NotFound.tsx
+  router.tsx
+  main.tsx
+  index.css
+```
+
+---
+
+## Conventions
+
+### Commit Messages
+
+Recommended: **Conventional Commits** (preferably in English):
+
+- `feat: ...`
+- `fix: ...`
+- `chore: ...`
+- `style: ...`
+
+Examples:
+
+- `feat: add hero image grid to home`
+- `chore: configure tailwind vite plugin`
+
+### Asset Naming
+
+For a clear and consistent order:
+
+- `src/assets/home/home-hero-01.webp`
+- `src/assets/home/home-hero-02.webp`
+- `src/assets/home/home-hero-03.webp`
+
+Use lowercase, hyphens, and zero-padded numbering (`01`, `02`, `03`).
+
+---
+
+## Notes
+
+- This project currently **does not use** `.env` files (no environment secrets/config needed).
+- Layout is designed in an **industrial clean** style: text sections are typically constrained for readability, while image sections can be wider (hero).
+
+---
+
+## Scripts (Quick Reference)
+
+- `npm run dev` — start development server
+- `npm run build` — create production build
+- `npm run preview` — preview production build locally
