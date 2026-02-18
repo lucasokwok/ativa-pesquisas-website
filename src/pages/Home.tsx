@@ -43,21 +43,29 @@ export default function Home() {
         </div>
         <div className="px-3 sm:px-4 lg:px-10">
           <div className="grid gap-4 lg:grid-cols-3">
-            <img
-              src={hero01}
-              alt="Laboratório e caracterização de materiais"
-              className="w-full h-auto"
-            />
-            <img
-              src={hero02}
-              alt="Estruturas de concreto em ambiente agressivo"
-              className="w-full h-auto"
-            />
-            <img
-              src={hero03}
-              alt="Aplicação e desempenho em durabilidade sustentável"
-              className="w-full h-auto"
-            />
+            <div className="overflow-hidden rounded-2xl">
+              <img
+                src={hero01}
+                alt="Laboratório e caracterização de materiais"
+                className="w-full h-auto transition-transform duration-300 ease-out hover:scale-105"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-2xl">
+              <img
+                src={hero02}
+                alt="Estruturas de concreto em ambiente agressivo"
+                className="w-full h-auto transition-transform duration-300 ease-out hover:scale-105"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-2xl">
+              <img
+                src={hero03}
+                alt="Aplicação e desempenho em durabilidade sustentável"
+                className="w-full h-auto transition-transform duration-300 ease-out hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import logo_mark from "../assets/brand/logo-mark.svg";
+import logo_wordmark from "../assets/brand/logo-wordmark.svg";
 
 const linkBase = "text-sm tracking-wide uppercase hover:text-white transition";
 const linkActive = "text-white";
@@ -8,11 +10,12 @@ export default function Header() {
   return (
     <header className="border-b border-zinc-800/80">
       <div className="flex w-full items-center justify-between px-6 sm:px-8 lg:px-32 py-5">
-        <NavLink
-          to="/"
-          className="text-sm font-semibold tracking-widest uppercase"
-        >
-          Ativa Pesquisas
+        <NavLink to="/" className="flex items-center gap-3">
+          <img
+            src={logo_wordmark}
+            alt="Ativa Pesquisas"
+            className="h-10 w-auto"
+          />
         </NavLink>
 
         <nav className="flex items-center gap-5">

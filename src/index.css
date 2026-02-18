@@ -1,11 +1,40 @@
 @import "tailwindcss";
 
-html,
-body,
-#root {
-  height: 100%;
+@theme {
+  /* Paleta Ativa Pesquisas (tema claro) */
+  --color-brand: #273747; /* primária / CTA / links */
+  --color-bg: #f6f6f7; /* fundo geral */
+  --color-text: #313131; /* texto padrão */
+  --color-muted: #e9ebec; /* fundos suaves / seções */
+  --color-ink: #0b1015; /* títulos / destaque */
+  --color-border: #e9ebec; /* bordas/divisórias */
+  --color-on-brand: #f6f6f7; /* texto em cima do brand */
 }
 
-body {
-  margin: 0;
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    @apply bg-bg text-text antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-ink;
+  }
+
+  a {
+    @apply text-brand hover:brightness-95;
+  }
 }
