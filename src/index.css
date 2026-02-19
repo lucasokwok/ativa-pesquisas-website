@@ -2,13 +2,13 @@
 
 @theme {
   /* Paleta Ativa Pesquisas (tema claro) */
-  --color-brand: #273747; /* primária / CTA / links */
+  --color-brand: #273747; /* primária */
   --color-bg: #f6f6f7; /* fundo geral */
   --color-text: #313131; /* texto padrão */
+  --color-subtle: #4b5563; /* texto secundário (descrições/legendas) */
   --color-muted: #e9ebec; /* fundos suaves / seções */
   --color-ink: #0b1015; /* títulos / destaque */
   --color-border: #e9ebec; /* bordas/divisórias */
-  --color-on-brand: #f6f6f7; /* texto em cima do brand */
 }
 
 @layer base {
@@ -36,5 +36,29 @@
 
   a {
     @apply text-brand hover:brightness-95;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-medium select-none
+      transition-all duration-200
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/40
+      focus-visible:ring-offset-2 focus-visible:ring-offset-bg
+      disabled:pointer-events-none disabled:opacity-50
+      filter-none hover:filter-none;
+  }
+
+  /* Pill cinza -> azul no hover */
+  .btn-pill-gray-to-blue {
+    @apply rounded-full px-6 py-3 text-sm
+      border border-border bg-muted text-text
+      hover:bg-brand hover:text-bg hover:border-brand
+      hover:-translate-y-[1px] hover:shadow-lg
+      active:translate-y-0 active:shadow-md;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-base;
   }
 }

@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
-import logo_mark from "../assets/brand/logo-mark.svg";
 import logo_wordmark from "../assets/brand/logo-wordmark.svg";
 
-const linkBase = "text-sm tracking-wide uppercase hover:text-white transition";
-const linkActive = "text-white";
-const linkIdle = "text-zinc-300";
+const linkBase =
+  "text-sm tracking-wide uppercase transition-colors duration-200";
+const linkActive = "text-brand";
+const linkIdle = "text-text/70 hover:text-ink";
 
 export default function Header() {
   return (
-    <header className="border-b border-zinc-800/80">
+    <header className="relative z-30 bg-bg border-b border-border">
       <div className="flex w-full items-center justify-between px-6 sm:px-8 lg:px-32 py-5">
         <NavLink to="/" className="flex items-center gap-3">
           <img
@@ -27,6 +27,7 @@ export default function Header() {
           >
             Tecnologia
           </NavLink>
+
           <NavLink
             to="/aplicacoes"
             className={({ isActive }) =>
@@ -35,6 +36,7 @@ export default function Header() {
           >
             Aplicações
           </NavLink>
+
           <NavLink
             to="/sobre"
             className={({ isActive }) =>
@@ -43,6 +45,7 @@ export default function Header() {
           >
             Sobre
           </NavLink>
+
           <NavLink
             to="/projetos"
             className={({ isActive }) =>
@@ -51,6 +54,7 @@ export default function Header() {
           >
             Projetos
           </NavLink>
+
           <NavLink
             to="/contato"
             className={({ isActive }) =>
