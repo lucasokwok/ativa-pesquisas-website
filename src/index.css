@@ -9,6 +9,7 @@
   --color-muted: #e9ebec; /* fundos suaves / seções */
   --color-ink: #0b1015; /* títulos / destaque */
   --color-border: #e9ebec; /* bordas/divisórias */
+  --color-white: #ffffff;
 }
 
 @layer base {
