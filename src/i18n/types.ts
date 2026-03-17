@@ -56,6 +56,66 @@ export type HomeContent = {
   };
 };
 
+export type TechnologyCard = {
+  title: string;
+  description: string;
+};
+
+export type TechnologyStep = {
+  step: string;
+  title: string;
+  description: string;
+};
+
+export type TechnologyIndicator = {
+  label: string;
+  value: string;
+  description: string;
+};
+
+export type TechnologyContent = {
+  hero: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    mainPlaceholder: string;
+    block01Placeholder: string;
+    block02Placeholder: string;
+  };
+  capabilities: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: [TechnologyCard, TechnologyCard, TechnologyCard, TechnologyCard];
+  };
+  process: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    steps: [TechnologyStep, TechnologyStep, TechnologyStep, TechnologyStep];
+  };
+  structure: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: [TechnologyCard, TechnologyCard, TechnologyCard];
+    imagePlaceholder: string;
+    imageCaption: string;
+  };
+  indicators: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: [TechnologyIndicator, TechnologyIndicator, TechnologyIndicator];
+  };
+  cta: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+};
+
 export type TranslationSchema = {
   common: {
     language: {
@@ -93,7 +153,7 @@ export type TranslationSchema = {
   pages: {
     home: HomeContent;
     about: SimplePageContent;
-    technology: SimplePageContent;
+    technology: TechnologyContent;
     applications: SimplePageContent;
     projects: SimplePageContent;
     contact: SimplePageContent;

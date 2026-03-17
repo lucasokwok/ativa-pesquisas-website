@@ -113,8 +113,114 @@ export const pt: TranslationSchema = {
       subtitle: "Conheça a Ativa Pesquisas",
     },
     technology: {
-      title: "Tecnologia",
-      subtitle: "Tecnologia e capacidades",
+      hero: {
+        eyebrow: "Tecnologia",
+        title: "(Edite) Tecnologia e capacidades da Ativa Pesquisas",
+        description: "(Edite) Texto introdutório da página de tecnologia.",
+        mainPlaceholder: "IMAGEM / BLOCO PRINCIPAL",
+        block01Placeholder: "BLOCO 1",
+        block02Placeholder: "BLOCO 2",
+      },
+      capabilities: {
+        eyebrow: "Capacidades",
+        title: "(Edite) Competências e recursos tecnológicos",
+        description: "(Edite) Texto curto de introdução da seção.",
+        cards: [
+          {
+            title: "(Edite) Caracterização",
+            description: "(Edite) Descrição curta da capacidade técnica.",
+          },
+          {
+            title: "(Edite) Formulação",
+            description: "(Edite) Descrição curta da capacidade técnica.",
+          },
+          {
+            title: "(Edite) Ensaios",
+            description: "(Edite) Descrição curta da capacidade técnica.",
+          },
+          {
+            title: "(Edite) Validação",
+            description: "(Edite) Descrição curta da capacidade técnica.",
+          },
+        ],
+      },
+      process: {
+        eyebrow: "Processo",
+        title: "(Edite) Como a tecnologia é aplicada",
+        description: "(Edite) Texto curto explicando o fluxo de atuação.",
+        steps: [
+          {
+            step: "01",
+            title: "(Edite) Etapa 1",
+            description: "(Edite) Descrição curta da etapa.",
+          },
+          {
+            step: "02",
+            title: "(Edite) Etapa 2",
+            description: "(Edite) Descrição curta da etapa.",
+          },
+          {
+            step: "03",
+            title: "(Edite) Etapa 3",
+            description: "(Edite) Descrição curta da etapa.",
+          },
+          {
+            step: "04",
+            title: "(Edite) Etapa 4",
+            description: "(Edite) Descrição curta da etapa.",
+          },
+        ],
+      },
+      structure: {
+        eyebrow: "Estrutura",
+        title: "(Edite) Laboratório, métodos e desenvolvimento",
+        description: "(Edite) Texto breve sobre estrutura e operação técnica.",
+        cards: [
+          {
+            title: "(Edite) Infraestrutura",
+            description: "(Edite) Descrição curta.",
+          },
+          {
+            title: "(Edite) Métodos",
+            description: "(Edite) Descrição curta.",
+          },
+          {
+            title: "(Edite) Pesquisa aplicada",
+            description: "(Edite) Descrição curta.",
+          },
+        ],
+        imagePlaceholder: "IMAGEM / ESTRUTURA TÉCNICA",
+        imageCaption: "(Edite) Legenda opcional.",
+      },
+      indicators: {
+        eyebrow: "Indicadores",
+        title: "(Edite) Destaques da atuação tecnológica",
+        description: "(Edite) Texto curto para contextualizar os destaques.",
+        items: [
+          {
+            label: "(Edite)",
+            value: "00",
+            description: "(Edite) Indicador ou marco técnico",
+          },
+          {
+            label: "(Edite)",
+            value: "00",
+            description: "(Edite) Indicador ou marco técnico",
+          },
+          {
+            label: "(Edite)",
+            value: "00",
+            description: "(Edite) Indicador ou marco técnico",
+          },
+        ],
+      },
+      cta: {
+        title: "(Edite) Quer entender melhor nossa tecnologia?",
+        description:
+          "(Edite) Texto curto de chamada para contato ou aprofundamento.",
+        primaryButton: "Entrar em contato",
+        secondaryButton: "Ver projetos",
+      },
     },
     applications: {
       title: "Aplicações",
