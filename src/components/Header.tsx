@@ -20,6 +20,15 @@ export default function Header() {
 
         <nav className="flex items-center gap-5">
           <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `${linkBase} ${isActive ? linkActive : linkIdle}`
+            }
+          >
+            Home
+          </NavLink>
+
+          <NavLink
             to="/tecnologia"
             className={({ isActive }) =>
               `${linkBase} ${isActive ? linkActive : linkIdle}`
