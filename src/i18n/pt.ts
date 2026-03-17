@@ -109,8 +109,165 @@ export const pt: TranslationSchema = {
       },
     },
     about: {
-      title: "Sobre",
-      subtitle: "Conheça a Ativa Pesquisas",
+      hero: {
+        eyebrow: "Sobre",
+        title: "(Edite) A história da Ativa Pesquisas",
+        description:
+          "(Edite) Texto introdutório apresentando a empresa, sua origem e propósito.",
+        mainPlaceholder: "IMAGEM PRINCIPAL / HISTÓRIA",
+        trajectoryEyebrow: "(Edite)",
+        trajectoryTitle: "(Edite) Nossa trajetória",
+        trajectoryDescription:
+          "(Edite) Texto curto sobre a origem e evolução da Ativa Pesquisas.",
+        purposeEyebrow: "(Edite)",
+        purposeTitle: "(Edite) Propósito",
+        purposeDescription:
+          "(Edite) Texto curto sobre missão, visão ou direcionamento estratégico.",
+      },
+      founders: {
+        eyebrow: "Fundadores",
+        title: "(Edite) Liderança e experiência técnica",
+        description: "(Edite) Texto curto apresentando os três fundadores.",
+        items: [
+          {
+            name: "(Edite) Dr. Fernando S. Ortega",
+            role: "(Edite) Co-fundador",
+            bio: "(Edite) Texto curto sobre trajetória, formação, experiência e contribuição para a Ativa Pesquisas.",
+            linkedinLabel: "LinkedIn",
+            linkedinUrl: "#",
+            photoPlaceholder: "FOTO DO FUNDADOR",
+          },
+          {
+            name: "(Edite) Dra. Ivone Regina de Oliveira",
+            role: "(Edite) Co-fundadora",
+            bio: "(Edite) Texto curto sobre trajetória, formação, experiência e contribuição para a Ativa Pesquisas.",
+            linkedinLabel: "LinkedIn",
+            linkedinUrl: "#",
+            photoPlaceholder: "FOTO DO FUNDADOR",
+          },
+          {
+            name: "(Edite) Me. Indira Teixeira Oliveira",
+            role: "(Edite) Co-fundadora",
+            bio: "(Edite) Texto curto sobre trajetória, formação, experiência e contribuição para a Ativa Pesquisas.",
+            linkedinLabel: "LinkedIn",
+            linkedinUrl: "#",
+            photoPlaceholder: "FOTO DO FUNDADOR",
+          },
+        ],
+      },
+      timeline: {
+        eyebrow: "Linha do tempo",
+        title: "(Edite) Principais marcos da trajetória",
+        description:
+          "(Edite) Texto curto contextualizando a evolução da empresa.",
+        items: [
+          {
+            year: "(Edite)",
+            title: "(Edite) Origem da iniciativa",
+            description:
+              "(Edite) Texto curto sobre o início da pesquisa, motivação e contexto.",
+          },
+          {
+            year: "(Edite)",
+            title: "(Edite) Consolidação técnica",
+            description:
+              "(Edite) Texto curto sobre desenvolvimento, validação ou avanço institucional.",
+          },
+          {
+            year: "(Edite)",
+            title: "(Edite) Expansão e aplicações",
+            description:
+              "(Edite) Texto curto sobre amadurecimento do projeto e evolução da atuação.",
+          },
+        ],
+      },
+      logoInspiration: {
+        eyebrow: "Identidade visual",
+        title: "(Edite) A logo da Ativa e sua inspiração no Arco da Inovação",
+        description:
+          "(Edite) Texto principal explicando que a identidade visual da Ativa foi inspirada no Arco da Inovação, em São José dos Campos, e como isso se conecta com pesquisa, tecnologia e futuro.",
+        cards: [
+          {
+            title: "(Edite) Inspiração arquitetônica",
+            description:
+              "(Edite) Texto curto sobre a inspiração da marca no Arco da Inovação.",
+          },
+          {
+            title: "(Edite) Conexão com a cidade",
+            description:
+              "(Edite) Texto curto sobre São José dos Campos como sede e referência tecnológica.",
+          },
+          {
+            title: "(Edite) Simbologia da marca",
+            description:
+              "(Edite) Texto curto sobre forma, conceito e significado visual da logo.",
+          },
+        ],
+        logoPlaceholder: "LOGO DA ATIVA",
+        logoCaption: "(Edite) Legenda sobre a marca.",
+        landmarkPlaceholder: "FOTO DO ARCO DA INOVAÇÃO",
+        landmarkCaption: "(Edite) Legenda sobre a inspiração arquitetônica.",
+      },
+      city: {
+        eyebrow: "Cidade-sede",
+        title: "(Edite) São José dos Campos como parte da identidade da Ativa",
+        description:
+          "(Edite) Texto principal sobre São José dos Campos ser uma das cidades mais tecnológicas do Brasil e como esse contexto fortalece a imagem e o posicionamento da Ativa Pesquisas.",
+        cards: [
+          {
+            title: "(Edite) Cidade-sede",
+            description:
+              "(Edite) Texto curto sobre São José dos Campos e sua relevância.",
+          },
+          {
+            title: "(Edite) Inovação e tecnologia",
+            description:
+              "(Edite) Texto curto sobre o ambiente tecnológico da cidade.",
+          },
+          {
+            title: "(Edite) Identidade regional",
+            description:
+              "(Edite) Texto curto sobre o vínculo da Ativa com sua origem local.",
+          },
+        ],
+        imagePlaceholder: "IMAGEM / SÃO JOSÉ DOS CAMPOS",
+        imageCaption: "(Edite) Legenda opcional sobre a cidade-sede.",
+      },
+      values: {
+        eyebrow: "Identidade",
+        title: "(Edite) Valores que orientam a Ativa Pesquisas",
+        description:
+          "(Edite) Texto breve sobre os princípios que sustentam a atuação da empresa.",
+        cards: [
+          {
+            title: "(Edite) Pesquisa aplicada",
+            description: "(Edite) Texto curto.",
+          },
+          {
+            title: "(Edite) Rigor técnico",
+            description: "(Edite) Texto curto.",
+          },
+          {
+            title: "(Edite) Sustentabilidade",
+            description: "(Edite) Texto curto.",
+          },
+        ],
+        imagePlaceholder: "IMAGEM / INSTITUIÇÃO / PESQUISA",
+        imageCaption: "(Edite) Legenda opcional.",
+      },
+      partners: {
+        eyebrow: "Instituições parceiras",
+        title: "(Edite) Rede institucional e colaboração em pesquisa",
+        description:
+          "(Edite) Texto curto para introduzir o carrossel de instituições parceiras.",
+      },
+      cta: {
+        title: "(Edite) Quer conhecer melhor nossa trajetória?",
+        description:
+          "(Edite) Texto curto de encerramento e convite para contato.",
+        primaryButton: "Entrar em contato",
+        secondaryButton: "Ver projetos",
+      },
     },
     technology: {
       hero: {

@@ -1,100 +1,13 @@
+import { Link } from "react-router-dom";
 import logoOutline from "../assets/home/home-bg-logo-outline.webp";
 import LogoCarousel from "../components/LogoCarousel";
 import { partners } from "../data/partners";
-
-const founders = [
-  {
-    name: "(Edite) Dr. Fernando S. Ortega",
-    role: "(Edite) Co-fundador",
-    bio: "(Edite) Texto curto sobre trajetória, formação, experiência e contribuição para a Ativa Pesquisas.",
-    linkedin: "#",
-  },
-  {
-    name: "(Edite) Dra. Ivone Regina de Oliveira",
-    role: "(Edite) Co-fundadora",
-    bio: "(Edite) Texto curto sobre trajetória, formação, experiência e contribuição para a Ativa Pesquisas.",
-    linkedin: "#",
-  },
-  {
-    name: "(Edite) Me. Indira Teixeira Oliveira",
-    role: "(Edite) Co-fundadora",
-    bio: "(Edite) Texto curto sobre trajetória, formação, experiência e contribuição para a Ativa Pesquisas.",
-    linkedin: "#",
-  },
-];
-
-const milestones = [
-  {
-    year: "(Edite)",
-    title: "(Edite) Origem da iniciativa",
-    description:
-      "(Edite) Texto curto sobre o início da pesquisa, motivação e contexto.",
-  },
-  {
-    year: "(Edite)",
-    title: "(Edite) Consolidação técnica",
-    description:
-      "(Edite) Texto curto sobre desenvolvimento, validação ou avanço institucional.",
-  },
-  {
-    year: "(Edite)",
-    title: "(Edite) Expansão e aplicações",
-    description:
-      "(Edite) Texto curto sobre amadurecimento do projeto e evolução da atuação.",
-  },
-];
-
-const values = [
-  {
-    title: "(Edite) Pesquisa aplicada",
-    description: "(Edite) Texto curto.",
-  },
-  {
-    title: "(Edite) Rigor técnico",
-    description: "(Edite) Texto curto.",
-  },
-  {
-    title: "(Edite) Sustentabilidade",
-    description: "(Edite) Texto curto.",
-  },
-];
-
-const identityHighlights = [
-  {
-    title: "(Edite) Inspiração arquitetônica",
-    description:
-      "(Edite) Texto curto sobre a inspiração da marca no Arco da Inovação.",
-  },
-  {
-    title: "(Edite) Conexão com a cidade",
-    description:
-      "(Edite) Texto curto sobre São José dos Campos como sede e referência tecnológica.",
-  },
-  {
-    title: "(Edite) Simbologia da marca",
-    description:
-      "(Edite) Texto curto sobre forma, conceito e significado visual da logo.",
-  },
-];
-
-const cityHighlights = [
-  {
-    title: "(Edite) Cidade-sede",
-    description:
-      "(Edite) Texto curto sobre São José dos Campos e sua relevância.",
-  },
-  {
-    title: "(Edite) Inovação e tecnologia",
-    description: "(Edite) Texto curto sobre o ambiente tecnológico da cidade.",
-  },
-  {
-    title: "(Edite) Identidade regional",
-    description:
-      "(Edite) Texto curto sobre o vínculo da Ativa com sua origem local.",
-  },
-];
+import { useLanguage } from "../hooks/useLanguage";
 
 export default function About() {
+  const { t } = useLanguage();
+  const about = t.pages.about;
+
   return (
     <div className="relative isolate overflow-x-hidden">
       <img
@@ -118,16 +31,15 @@ export default function About() {
           <div className="px-6 sm:px-8 lg:px-32">
             <div className="flex flex-col gap-4">
               <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                Sobre
+                {about.hero.eyebrow}
               </p>
 
               <h1 className="max-w-4xl text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl">
-                (Edite) A história da Ativa Pesquisas
+                {about.hero.title}
               </h1>
 
               <p className="max-w-2xl text-base leading-relaxed text-subtitle sm:text-lg">
-                (Edite) Texto introdutório apresentando a empresa, sua origem e
-                propósito.
+                {about.hero.description}
               </p>
             </div>
           </div>
@@ -135,35 +47,37 @@ export default function About() {
           <div className="mt-10 px-3 sm:px-4 lg:px-10">
             <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
               <div className="rounded-2xl border border-border bg-bg p-4">
-                <div className="aspect-[16/9] rounded-xl bg-muted flex items-center justify-center text-text/60">
-                  IMAGEM PRINCIPAL / HISTÓRIA
+                <div className="flex aspect-[16/9] items-center justify-center rounded-xl bg-muted text-text/60">
+                  {about.hero.mainPlaceholder}
                 </div>
               </div>
 
               <div className="grid gap-4">
                 <div className="rounded-2xl border border-border bg-bg p-6 shadow-sm">
                   <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                    (Edite)
+                    {about.hero.trajectoryEyebrow}
                   </p>
+
                   <h2 className="mt-3 text-xl font-semibold tracking-tight text-ink">
-                    (Edite) Nossa trajetória
+                    {about.hero.trajectoryTitle}
                   </h2>
+
                   <p className="mt-3 text-sm leading-relaxed text-subtitle">
-                    (Edite) Texto curto sobre a origem e evolução da Ativa
-                    Pesquisas.
+                    {about.hero.trajectoryDescription}
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-border bg-bg p-6 shadow-sm">
                   <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                    (Edite)
+                    {about.hero.purposeEyebrow}
                   </p>
+
                   <h2 className="mt-3 text-xl font-semibold tracking-tight text-ink">
-                    (Edite) Propósito
+                    {about.hero.purposeTitle}
                   </h2>
+
                   <p className="mt-3 text-sm leading-relaxed text-subtitle">
-                    (Edite) Texto curto sobre missão, visão ou direcionamento
-                    estratégico.
+                    {about.hero.purposeDescription}
                   </p>
                 </div>
               </div>
@@ -175,27 +89,27 @@ export default function About() {
           <div className="px-6 sm:px-8 lg:px-32">
             <div className="max-w-3xl">
               <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                Fundadores
+                {about.founders.eyebrow}
               </p>
 
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-                (Edite) Liderança e experiência técnica
+                {about.founders.title}
               </h2>
 
               <p className="mt-3 leading-relaxed text-subtitle">
-                (Edite) Texto curto apresentando os três fundadores.
+                {about.founders.description}
               </p>
             </div>
 
             <div className="mt-10 grid gap-6 xl:grid-cols-3">
-              {founders.map((founder) => (
+              {about.founders.items.map((founder) => (
                 <article
                   key={founder.name}
                   className="overflow-hidden rounded-2xl border border-border bg-bg shadow-sm"
                 >
                   <div className="p-4">
-                    <div className="aspect-[4/5] rounded-xl bg-muted flex items-center justify-center text-text/60">
-                      FOTO DO FUNDADOR
+                    <div className="flex aspect-[4/5] items-center justify-center rounded-xl bg-muted text-text/60">
+                      {founder.photoPlaceholder}
                     </div>
                   </div>
 
@@ -213,12 +127,12 @@ export default function About() {
                     </p>
 
                     <a
-                      href={founder.linkedin}
+                      href={founder.linkedinUrl}
                       target="_blank"
                       rel="noreferrer"
                       className="mt-5 inline-flex items-center rounded-full border border-border px-5 py-2.5 text-sm font-medium text-ink transition-all duration-300 hover:-translate-y-[1px] hover:border-brand hover:text-brand"
                     >
-                      LinkedIn
+                      {founder.linkedinLabel}
                     </a>
                   </div>
                 </article>
@@ -232,20 +146,20 @@ export default function About() {
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
               <div className="space-y-4">
                 <p className="text-xs tracking-[0.3em] uppercase text-bg/70">
-                  Linha do tempo
+                  {about.timeline.eyebrow}
                 </p>
 
                 <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                  (Edite) Principais marcos da trajetória
+                  {about.timeline.title}
                 </h2>
 
                 <p className="leading-relaxed text-bg/80">
-                  (Edite) Texto curto contextualizando a evolução da empresa.
+                  {about.timeline.description}
                 </p>
               </div>
 
               <div className="grid gap-4">
-                {milestones.map((item) => (
+                {about.timeline.items.map((item) => (
                   <div
                     key={`${item.year}-${item.title}`}
                     className="rounded-2xl bg-bg/10 p-6 ring-1 ring-white/10"
@@ -253,9 +167,11 @@ export default function About() {
                     <p className="text-sm tracking-[0.25em] uppercase text-bg/60">
                       {item.year}
                     </p>
+
                     <h3 className="mt-3 text-base font-semibold">
                       {item.title}
                     </h3>
+
                     <p className="mt-2 text-sm leading-relaxed text-bg/75">
                       {item.description}
                     </p>
@@ -271,22 +187,19 @@ export default function About() {
             <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
               <div>
                 <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                  Identidade visual
+                  {about.logoInspiration.eyebrow}
                 </p>
 
                 <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-                  (Edite) A logo da Ativa e sua inspiração no Arco da Inovação
+                  {about.logoInspiration.title}
                 </h2>
 
                 <p className="mt-3 leading-relaxed text-subtitle">
-                  (Edite) Texto principal explicando que a identidade visual da
-                  Ativa foi inspirada no Arco da Inovação, em São José dos
-                  Campos, e como isso se conecta com pesquisa, tecnologia e
-                  futuro.
+                  {about.logoInspiration.description}
                 </p>
 
                 <div className="mt-8 grid gap-4">
-                  {identityHighlights.map((item) => (
+                  {about.logoInspiration.cards.map((item) => (
                     <div
                       key={item.title}
                       className="rounded-2xl border border-border bg-bg p-5"
@@ -294,6 +207,7 @@ export default function About() {
                       <h3 className="text-base font-semibold text-ink">
                         {item.title}
                       </h3>
+
                       <p className="mt-2 text-sm leading-relaxed text-subtitle">
                         {item.description}
                       </p>
@@ -304,20 +218,20 @@ export default function About() {
 
               <div className="grid gap-4">
                 <div className="rounded-2xl border border-border bg-bg p-4">
-                  <div className="aspect-[4/3] rounded-xl bg-muted flex items-center justify-center text-text/60">
-                    LOGO DA ATIVA
+                  <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-muted text-text/60">
+                    {about.logoInspiration.logoPlaceholder}
                   </div>
                   <p className="mt-3 text-sm text-subtitle">
-                    (Edite) Legenda sobre a marca.
+                    {about.logoInspiration.logoCaption}
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-border bg-bg p-4">
-                  <div className="aspect-[16/9] rounded-xl bg-muted flex items-center justify-center text-text/60">
-                    FOTO DO ARCO DA INOVAÇÃO
+                  <div className="flex aspect-[16/9] items-center justify-center rounded-xl bg-muted text-text/60">
+                    {about.logoInspiration.landmarkPlaceholder}
                   </div>
                   <p className="mt-3 text-sm text-subtitle">
-                    (Edite) Legenda sobre a inspiração arquitetônica.
+                    {about.logoInspiration.landmarkCaption}
                   </p>
                 </div>
               </div>
@@ -329,31 +243,30 @@ export default function About() {
           <div className="px-6 sm:px-8 lg:px-32">
             <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
               <div className="rounded-2xl border border-border bg-bg p-4">
-                <div className="aspect-[4/5] rounded-xl bg-muted flex items-center justify-center text-text/60">
-                  IMAGEM / SÃO JOSÉ DOS CAMPOS
+                <div className="flex aspect-[4/5] items-center justify-center rounded-xl bg-muted text-text/60">
+                  {about.city.imagePlaceholder}
                 </div>
+
                 <p className="mt-3 text-sm text-subtitle">
-                  (Edite) Legenda opcional sobre a cidade-sede.
+                  {about.city.imageCaption}
                 </p>
               </div>
 
               <div>
                 <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                  Cidade-sede
+                  {about.city.eyebrow}
                 </p>
 
                 <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-                  (Edite) São José dos Campos como parte da identidade da Ativa
+                  {about.city.title}
                 </h2>
 
                 <p className="mt-3 leading-relaxed text-subtitle">
-                  (Edite) Texto principal sobre São José dos Campos ser uma das
-                  cidades mais tecnológicas do Brasil e como esse contexto
-                  fortalece a imagem e o posicionamento da Ativa Pesquisas.
+                  {about.city.description}
                 </p>
 
                 <div className="mt-8 grid gap-4">
-                  {cityHighlights.map((item) => (
+                  {about.city.cards.map((item) => (
                     <div
                       key={item.title}
                       className="rounded-2xl border border-border bg-muted p-5"
@@ -361,6 +274,7 @@ export default function About() {
                       <h3 className="text-base font-semibold text-ink">
                         {item.title}
                       </h3>
+
                       <p className="mt-2 text-sm leading-relaxed text-subtitle">
                         {item.description}
                       </p>
@@ -377,20 +291,19 @@ export default function About() {
             <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
               <div>
                 <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                  Identidade
+                  {about.values.eyebrow}
                 </p>
 
                 <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-                  (Edite) Valores que orientam a Ativa Pesquisas
+                  {about.values.title}
                 </h2>
 
                 <p className="mt-3 leading-relaxed text-subtitle">
-                  (Edite) Texto breve sobre os princípios que sustentam a
-                  atuação da empresa.
+                  {about.values.description}
                 </p>
 
                 <div className="mt-8 grid gap-4">
-                  {values.map((item) => (
+                  {about.values.cards.map((item) => (
                     <div
                       key={item.title}
                       className="rounded-2xl border border-border bg-bg p-5"
@@ -398,6 +311,7 @@ export default function About() {
                       <h3 className="text-base font-semibold text-ink">
                         {item.title}
                       </h3>
+
                       <p className="mt-2 text-sm leading-relaxed text-subtitle">
                         {item.description}
                       </p>
@@ -407,11 +321,12 @@ export default function About() {
               </div>
 
               <div className="rounded-2xl border border-border bg-bg p-4">
-                <div className="aspect-[4/5] rounded-xl bg-muted flex items-center justify-center text-text/60">
-                  IMAGEM / INSTITUIÇÃO / PESQUISA
+                <div className="flex aspect-[4/5] items-center justify-center rounded-xl bg-muted text-text/60">
+                  {about.values.imagePlaceholder}
                 </div>
+
                 <p className="mt-3 text-sm text-subtitle">
-                  (Edite) Legenda opcional.
+                  {about.values.imageCaption}
                 </p>
               </div>
             </div>
@@ -422,16 +337,15 @@ export default function About() {
           <div className="px-6 sm:px-8 lg:px-32">
             <div className="max-w-3xl">
               <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                Instituições parceiras
+                {about.partners.eyebrow}
               </p>
 
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-                (Edite) Rede institucional e colaboração em pesquisa
+                {about.partners.title}
               </h2>
 
               <p className="mt-3 leading-relaxed text-subtitle">
-                (Edite) Texto curto para introduzir o carrossel de instituições
-                parceiras.
+                {about.partners.description}
               </p>
             </div>
           </div>
@@ -445,27 +359,27 @@ export default function About() {
           <div className="px-6 sm:px-8 lg:px-32">
             <div className="rounded-2xl bg-bg/10 p-8 ring-1 ring-white/10 sm:p-10">
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                (Edite) Quer conhecer melhor nossa trajetória?
+                {about.cta.title}
               </h2>
 
               <p className="mt-3 max-w-2xl leading-relaxed text-bg/80">
-                (Edite) Texto curto de encerramento e convite para contato.
+                {about.cta.description}
               </p>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="/contato"
+                <Link
+                  to="/contato"
                   className="btn rounded-full bg-bg px-8 py-4 text-base text-ink hover:-translate-y-[1px] hover:shadow-lg"
                 >
-                  Entrar em contato
-                </a>
+                  {about.cta.primaryButton}
+                </Link>
 
-                <a
-                  href="/projetos"
-                  className="btn rounded-full border border-white/20 px-8 py-4 text-base text-bg hover:bg-bg/10 hover:-translate-y-[1px] hover:shadow-lg"
+                <Link
+                  to="/projetos"
+                  className="btn rounded-full border border-white/20 px-8 py-4 text-base text-bg hover:-translate-y-[1px] hover:bg-bg/10 hover:shadow-lg"
                 >
-                  Ver projetos
-                </a>
+                  {about.cta.secondaryButton}
+                </Link>
               </div>
             </div>
           </div>

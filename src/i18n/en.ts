@@ -109,8 +109,166 @@ export const en: TranslationSchema = {
       },
     },
     about: {
-      title: "About",
-      subtitle: "Get to know Ativa Pesquisas",
+      hero: {
+        eyebrow: "About",
+        title: "(Edit) The story of Ativa Pesquisas",
+        description:
+          "(Edit) Introductory text presenting the company, its origin and purpose.",
+        mainPlaceholder: "MAIN IMAGE / HISTORY",
+        trajectoryEyebrow: "(Edit)",
+        trajectoryTitle: "(Edit) Our journey",
+        trajectoryDescription:
+          "(Edit) Short text about the origin and evolution of Ativa Pesquisas.",
+        purposeEyebrow: "(Edit)",
+        purposeTitle: "(Edit) Purpose",
+        purposeDescription:
+          "(Edit) Short text about mission, vision or strategic direction.",
+      },
+      founders: {
+        eyebrow: "Founders",
+        title: "(Edit) Leadership and technical experience",
+        description: "(Edit) Short text introducing the three founders.",
+        items: [
+          {
+            name: "(Edit) Dr. Fernando S. Ortega",
+            role: "(Edit) Co-founder",
+            bio: "(Edit) Short text about background, education, experience and contribution to Ativa Pesquisas.",
+            linkedinLabel: "LinkedIn",
+            linkedinUrl: "#",
+            photoPlaceholder: "FOUNDER PHOTO",
+          },
+          {
+            name: "(Edit) Dra. Ivone Regina de Oliveira",
+            role: "(Edit) Co-founder",
+            bio: "(Edit) Short text about background, education, experience and contribution to Ativa Pesquisas.",
+            linkedinLabel: "LinkedIn",
+            linkedinUrl: "#",
+            photoPlaceholder: "FOUNDER PHOTO",
+          },
+          {
+            name: "(Edit) Me. Indira Teixeira Oliveira",
+            role: "(Edit) Co-founder",
+            bio: "(Edit) Short text about background, education, experience and contribution to Ativa Pesquisas.",
+            linkedinLabel: "LinkedIn",
+            linkedinUrl: "#",
+            photoPlaceholder: "FOUNDER PHOTO",
+          },
+        ],
+      },
+      timeline: {
+        eyebrow: "Timeline",
+        title: "(Edit) Main milestones in the journey",
+        description:
+          "(Edit) Short text contextualizing the company’s evolution.",
+        items: [
+          {
+            year: "(Edit)",
+            title: "(Edit) Origin of the initiative",
+            description:
+              "(Edit) Short text about the start of the research, motivation and context.",
+          },
+          {
+            year: "(Edit)",
+            title: "(Edit) Technical consolidation",
+            description:
+              "(Edit) Short text about development, validation or institutional advancement.",
+          },
+          {
+            year: "(Edit)",
+            title: "(Edit) Expansion and applications",
+            description:
+              "(Edit) Short text about the maturation of the project and evolution of operations.",
+          },
+        ],
+      },
+      logoInspiration: {
+        eyebrow: "Visual identity",
+        title:
+          "(Edit) Ativa’s logo and its inspiration from the Arco da Inovação",
+        description:
+          "(Edit) Main text explaining that Ativa’s visual identity was inspired by the Arco da Inovação in São José dos Campos and how this connects with research, technology and future.",
+        cards: [
+          {
+            title: "(Edit) Architectural inspiration",
+            description:
+              "(Edit) Short text about the brand’s inspiration from the Arco da Inovação.",
+          },
+          {
+            title: "(Edit) Connection with the city",
+            description:
+              "(Edit) Short text about São José dos Campos as headquarters and technological reference.",
+          },
+          {
+            title: "(Edit) Brand symbolism",
+            description:
+              "(Edit) Short text about the shape, concept and visual meaning of the logo.",
+          },
+        ],
+        logoPlaceholder: "ATIVA LOGO",
+        logoCaption: "(Edit) Caption about the brand.",
+        landmarkPlaceholder: "PHOTO OF ARCO DA INOVAÇÃO",
+        landmarkCaption: "(Edit) Caption about the architectural inspiration.",
+      },
+      city: {
+        eyebrow: "Headquarters city",
+        title: "(Edit) São José dos Campos as part of Ativa’s identity",
+        description:
+          "(Edit) Main text about São José dos Campos being one of the most technological cities in Brazil and how this context strengthens the image and positioning of Ativa Pesquisas.",
+        cards: [
+          {
+            title: "(Edit) Headquarters city",
+            description:
+              "(Edit) Short text about São José dos Campos and its relevance.",
+          },
+          {
+            title: "(Edit) Innovation and technology",
+            description:
+              "(Edit) Short text about the city’s technological environment.",
+          },
+          {
+            title: "(Edit) Regional identity",
+            description:
+              "(Edit) Short text about Ativa’s bond with its local origin.",
+          },
+        ],
+        imagePlaceholder: "IMAGE / SÃO JOSÉ DOS CAMPOS",
+        imageCaption: "(Edit) Optional caption about the headquarters city.",
+      },
+      values: {
+        eyebrow: "Identity",
+        title: "(Edit) Values that guide Ativa Pesquisas",
+        description:
+          "(Edit) Brief text about the principles that support the company’s work.",
+        cards: [
+          {
+            title: "(Edit) Applied research",
+            description: "(Edit) Short text.",
+          },
+          {
+            title: "(Edit) Technical rigor",
+            description: "(Edit) Short text.",
+          },
+          {
+            title: "(Edit) Sustainability",
+            description: "(Edit) Short text.",
+          },
+        ],
+        imagePlaceholder: "IMAGE / INSTITUTION / RESEARCH",
+        imageCaption: "(Edit) Optional caption.",
+      },
+      partners: {
+        eyebrow: "Partner institutions",
+        title: "(Edit) Institutional network and research collaboration",
+        description:
+          "(Edit) Short text introducing the partner institutions carousel.",
+      },
+      cta: {
+        title: "(Edit) Want to know our journey better?",
+        description:
+          "(Edit) Short closing text and invitation to get in touch.",
+        primaryButton: "Get in touch",
+        secondaryButton: "View projects",
+      },
     },
     technology: {
       hero: {

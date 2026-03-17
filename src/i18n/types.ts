@@ -193,6 +193,90 @@ export type ApplicationsContent = {
   };
 };
 
+export type AboutFounder = {
+  name: string;
+  role: string;
+  bio: string;
+  linkedinLabel: string;
+  linkedinUrl: string;
+  photoPlaceholder: string;
+};
+
+export type AboutMilestone = {
+  year: string;
+  title: string;
+  description: string;
+};
+
+export type AboutHighlight = {
+  title: string;
+  description: string;
+};
+
+export type AboutContent = {
+  hero: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    mainPlaceholder: string;
+    trajectoryEyebrow: string;
+    trajectoryTitle: string;
+    trajectoryDescription: string;
+    purposeEyebrow: string;
+    purposeTitle: string;
+    purposeDescription: string;
+  };
+  founders: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: AboutFounder[];
+  };
+  timeline: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: AboutMilestone[];
+  };
+  logoInspiration: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: AboutHighlight[];
+    logoPlaceholder: string;
+    logoCaption: string;
+    landmarkPlaceholder: string;
+    landmarkCaption: string;
+  };
+  city: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: AboutHighlight[];
+    imagePlaceholder: string;
+    imageCaption: string;
+  };
+  values: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: AboutHighlight[];
+    imagePlaceholder: string;
+    imageCaption: string;
+  };
+  partners: {
+    eyebrow: string;
+    title: string;
+    description: string;
+  };
+  cta: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+};
+
 export type TranslationSchema = {
   common: {
     language: {
@@ -229,7 +313,7 @@ export type TranslationSchema = {
   };
   pages: {
     home: HomeContent;
-    about: SimplePageContent;
+    about: AboutContent;
     technology: TechnologyContent;
     applications: ApplicationsContent;
     projects: SimplePageContent;
