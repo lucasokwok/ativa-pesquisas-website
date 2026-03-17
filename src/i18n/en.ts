@@ -227,8 +227,144 @@ export const en: TranslationSchema = {
       },
     },
     applications: {
-      title: "Applications",
-      subtitle: "Solution applications",
+      hero: {
+        eyebrow: "Applications",
+        title:
+          "(Edit) Applications of the solutions developed by Ativa Pesquisas",
+        description:
+          "(Edit) Introductory text about use contexts, sectors and environments where the technology can be applied.",
+        featured: {
+          placeholder: "MAIN IMAGE / HIGHLIGHTED APPLICATION",
+          caption: "(Edit) Main caption or highlight of the application.",
+        },
+        secondary: [
+          {
+            placeholder: "SECONDARY IMAGE 01",
+            caption: "(Edit) Short caption.",
+          },
+          {
+            placeholder: "SECONDARY IMAGE 02",
+            caption: "(Edit) Short caption.",
+          },
+        ],
+      },
+      fronts: {
+        eyebrow: "Application fronts",
+        title: "(Edit) Sectors and operating environments",
+        description:
+          "(Edit) Short text explaining the breadth of applications.",
+        cards: [
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Treatment plants",
+            description:
+              "(Edit) Short text about the application in structures exposed to aggressive environments.",
+          },
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Industrial infrastructure",
+            description:
+              "(Edit) Short text about the application in technical structures and facilities.",
+          },
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Chemical attack environments",
+            description:
+              "(Edit) Short text about the application in areas subject to accelerated degradation.",
+          },
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Storage systems",
+            description:
+              "(Edit) Short text about the application in reservoirs, containment systems or special surfaces.",
+          },
+        ],
+      },
+      gallery: {
+        eyebrow: "Gallery",
+        title: "(Edit) Visual examples of applications",
+        description:
+          "(Edit) Short text introducing the image gallery and use contexts.",
+        items: [
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Application 01",
+            description: "(Edit) Short image caption.",
+          },
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Application 02",
+            description: "(Edit) Short image caption.",
+          },
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Application 03",
+            description: "(Edit) Short image caption.",
+          },
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Application 04",
+            description: "(Edit) Short image caption.",
+          },
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Application 05",
+            description: "(Edit) Short image caption.",
+          },
+        ],
+      },
+      contexts: {
+        eyebrow: "Use contexts",
+        title: "(Edit) Applications in different technical scenarios",
+        description:
+          "(Edit) Brief text about adapting the technology to different demands and environments.",
+        cards: [
+          {
+            title: "(Edit) Sanitation",
+            description: "(Edit) Short text about this application front.",
+          },
+          {
+            title: "(Edit) Industry",
+            description: "(Edit) Short text about this application front.",
+          },
+          {
+            title: "(Edit) Storage",
+            description: "(Edit) Short text about this application front.",
+          },
+          {
+            title: "(Edit) Special structures",
+            description: "(Edit) Short text about this application front.",
+          },
+        ],
+        imagePlaceholder: "IMAGE / TECHNICAL APPLICATION",
+        imageCaption: "(Edit) Optional image caption.",
+      },
+      extra: {
+        items: [
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Complementary application 01",
+            description: "(Edit) Short text.",
+          },
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Complementary application 02",
+            description: "(Edit) Short text.",
+          },
+          {
+            placeholder: "IMAGE",
+            title: "(Edit) Complementary application 03",
+            description: "(Edit) Short text.",
+          },
+        ],
+      },
+      cta: {
+        title: "(Edit) Want to evaluate the application in your context?",
+        description:
+          "(Edit) Closing text inviting contact or technical assessment.",
+        primaryButton: "Get in touch",
+        secondaryButton: "View technology",
+      },
     },
     projects: {
       title: "Projects",

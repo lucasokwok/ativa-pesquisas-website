@@ -223,8 +223,144 @@ export const pt: TranslationSchema = {
       },
     },
     applications: {
-      title: "Aplicações",
-      subtitle: "Aplicações das soluções",
+      hero: {
+        eyebrow: "Aplicações",
+        title:
+          "(Edite) Aplicações das soluções desenvolvidas pela Ativa Pesquisas",
+        description:
+          "(Edite) Texto introdutório sobre os contextos de uso, setores e ambientes onde a tecnologia pode ser aplicada.",
+        featured: {
+          placeholder: "IMAGEM PRINCIPAL / APLICAÇÃO EM DESTAQUE",
+          caption: "(Edite) Legenda ou destaque principal da aplicação.",
+        },
+        secondary: [
+          {
+            placeholder: "IMAGEM SECUNDÁRIA 01",
+            caption: "(Edite) Legenda curta.",
+          },
+          {
+            placeholder: "IMAGEM SECUNDÁRIA 02",
+            caption: "(Edite) Legenda curta.",
+          },
+        ],
+      },
+      fronts: {
+        eyebrow: "Frentes de aplicação",
+        title: "(Edite) Setores e ambientes de atuação",
+        description:
+          "(Edite) Texto curto explicando a amplitude das aplicações.",
+        cards: [
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Estações de tratamento",
+            description:
+              "(Edite) Texto curto sobre a aplicação em estruturas expostas a ambientes agressivos.",
+          },
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Infraestrutura industrial",
+            description:
+              "(Edite) Texto curto sobre a aplicação em estruturas e instalações técnicas.",
+          },
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Ambientes com ataque químico",
+            description:
+              "(Edite) Texto curto sobre a aplicação em áreas sujeitas à degradação acelerada.",
+          },
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Sistemas de armazenamento",
+            description:
+              "(Edite) Texto curto sobre a aplicação em reservatórios, contenções ou superfícies especiais.",
+          },
+        ],
+      },
+      gallery: {
+        eyebrow: "Galeria",
+        title: "(Edite) Exemplos visuais de aplicações",
+        description:
+          "(Edite) Texto curto para introduzir a galeria de imagens e contextos de uso.",
+        items: [
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Aplicação 01",
+            description: "(Edite) Legenda curta da imagem.",
+          },
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Aplicação 02",
+            description: "(Edite) Legenda curta da imagem.",
+          },
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Aplicação 03",
+            description: "(Edite) Legenda curta da imagem.",
+          },
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Aplicação 04",
+            description: "(Edite) Legenda curta da imagem.",
+          },
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Aplicação 05",
+            description: "(Edite) Legenda curta da imagem.",
+          },
+        ],
+      },
+      contexts: {
+        eyebrow: "Contextos de uso",
+        title: "(Edite) Aplicações em diferentes cenários técnicos",
+        description:
+          "(Edite) Texto breve sobre adaptação da tecnologia a diferentes demandas e ambientes.",
+        cards: [
+          {
+            title: "(Edite) Saneamento",
+            description: "(Edite) Texto curto sobre essa frente de aplicação.",
+          },
+          {
+            title: "(Edite) Indústria",
+            description: "(Edite) Texto curto sobre essa frente de aplicação.",
+          },
+          {
+            title: "(Edite) Armazenamento",
+            description: "(Edite) Texto curto sobre essa frente de aplicação.",
+          },
+          {
+            title: "(Edite) Estruturas especiais",
+            description: "(Edite) Texto curto sobre essa frente de aplicação.",
+          },
+        ],
+        imagePlaceholder: "IMAGEM / APLICAÇÃO TÉCNICA",
+        imageCaption: "(Edite) Legenda opcional da imagem.",
+      },
+      extra: {
+        items: [
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Aplicação complementar 01",
+            description: "(Edite) Texto curto.",
+          },
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Aplicação complementar 02",
+            description: "(Edite) Texto curto.",
+          },
+          {
+            placeholder: "IMAGEM",
+            title: "(Edite) Aplicação complementar 03",
+            description: "(Edite) Texto curto.",
+          },
+        ],
+      },
+      cta: {
+        title: "(Edite) Quer avaliar a aplicação no seu contexto?",
+        description:
+          "(Edite) Texto curto de encerramento e convite para contato ou análise técnica.",
+        primaryButton: "Entrar em contato",
+        secondaryButton: "Ver tecnologia",
+      },
     },
     projects: {
       title: "Projetos",

@@ -116,6 +116,83 @@ export type TechnologyContent = {
   };
 };
 
+export type ApplicationsImageBlock = {
+  placeholder: string;
+  caption: string;
+};
+
+export type ApplicationsCard = {
+  placeholder: string;
+  title: string;
+  description: string;
+};
+
+export type ApplicationsGalleryCard = {
+  placeholder: string;
+  title: string;
+  description: string;
+};
+
+export type ApplicationsContextCard = {
+  title: string;
+  description: string;
+};
+
+export type ApplicationsContent = {
+  hero: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    featured: ApplicationsImageBlock;
+    secondary: [ApplicationsImageBlock, ApplicationsImageBlock];
+  };
+  fronts: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: [
+      ApplicationsCard,
+      ApplicationsCard,
+      ApplicationsCard,
+      ApplicationsCard,
+    ];
+  };
+  gallery: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: [
+      ApplicationsGalleryCard,
+      ApplicationsGalleryCard,
+      ApplicationsGalleryCard,
+      ApplicationsGalleryCard,
+      ApplicationsGalleryCard,
+    ];
+  };
+  contexts: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: [
+      ApplicationsContextCard,
+      ApplicationsContextCard,
+      ApplicationsContextCard,
+      ApplicationsContextCard,
+    ];
+    imagePlaceholder: string;
+    imageCaption: string;
+  };
+  extra: {
+    items: [ApplicationsCard, ApplicationsCard, ApplicationsCard];
+  };
+  cta: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+};
+
 export type TranslationSchema = {
   common: {
     language: {
@@ -154,7 +231,7 @@ export type TranslationSchema = {
     home: HomeContent;
     about: SimplePageContent;
     technology: TechnologyContent;
-    applications: SimplePageContent;
+    applications: ApplicationsContent;
     projects: SimplePageContent;
     contact: SimplePageContent;
     notFound: {
