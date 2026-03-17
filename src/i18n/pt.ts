@@ -36,8 +36,77 @@ export const pt: TranslationSchema = {
   },
   pages: {
     home: {
-      title: "Início",
-      subtitle: "Página inicial",
+      hero: {
+        eyebrow: "Ativa Pesquisas",
+        title:
+          "Mitigação de biocorrosão em concreto com foco em durabilidade sustentável",
+        description:
+          "Pesquisa e desenvolvimento de composições especiais com baixa porosidade, alta resistência mecânica e neutralização microbiológica em ambientes agressivos.",
+        ctaLabel: "Conheça a empresa",
+        images: {
+          hero01Alt: "Laboratório e caracterização de materiais",
+          hero02Alt: "Estruturas de concreto em ambiente agressivo",
+          hero03Alt: "Aplicação e desempenho em durabilidade sustentável",
+        },
+      },
+      approach: {
+        eyebrow: "(Edite) Nossa abordagem",
+        title: "(Edite) Materiais e composições para ambientes agressivos",
+        description:
+          "(Edite este texto) Explique em 2–3 linhas o que vocês fazem, como atuam e qual diferencial técnico.",
+        bullets: [
+          "(Edite) Baixa porosidade",
+          "(Edite) Neutralização microbiológica",
+          "(Edite) Durabilidade e sustentabilidade",
+        ],
+        imagePlaceholder: "IMAGEM AQUI (substitua por um <img />)",
+        imageCaption: "(Opcional) legenda/descrição curta da imagem.",
+      },
+      technology: {
+        title: "(Edite) Tecnologia e capacidades",
+        description:
+          "(Edite) Uma frase explicando seu laboratório, métodos, validações, etc.",
+        cards: [
+          {
+            title: "(Edite) Caracterização",
+            description: "(Edite) SEM, DRX, Raman...",
+          },
+          {
+            title: "(Edite) Desenvolvimento",
+            description: "(Edite) Ligantes, aditivos...",
+          },
+          {
+            title: "(Edite) Ensaios",
+            description: "(Edite) Durabilidade, resistência...",
+          },
+        ],
+      },
+      applications: {
+        title: "(Edite) Aplicações",
+        description:
+          "(Edite) Cite setores/ambientes onde as soluções se aplicam.",
+        featured: {
+          placeholder: "IMAGEM 1 (substitua por <img />)",
+          caption: "(Edite) Título/legenda da aplicação.",
+        },
+        secondary: [
+          {
+            placeholder: "IMAGEM 2",
+            caption: "(Edite) Legenda.",
+          },
+          {
+            placeholder: "IMAGEM 3",
+            caption: "(Edite) Legenda.",
+          },
+        ],
+      },
+      cta: {
+        title: "(Edite) Vamos falar sobre seu projeto?",
+        description:
+          "(Edite) Convite curto para contato: diagnóstico, proposta, parceria, etc.",
+        primaryButton: "Entrar em contato",
+        secondaryButton: "Ver projetos",
+      },
     },
     about: {
       title: "Sobre",

@@ -7,6 +7,55 @@ export type SimplePageContent = {
   subtitle: string;
 };
 
+export type HomeCard = {
+  title: string;
+  description: string;
+};
+
+export type HomeGalleryItem = {
+  placeholder: string;
+  caption: string;
+};
+
+export type HomeContent = {
+  hero: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    ctaLabel: string;
+    images: {
+      hero01Alt: string;
+      hero02Alt: string;
+      hero03Alt: string;
+    };
+  };
+  approach: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    bullets: [string, string, string];
+    imagePlaceholder: string;
+    imageCaption: string;
+  };
+  technology: {
+    title: string;
+    description: string;
+    cards: [HomeCard, HomeCard, HomeCard];
+  };
+  applications: {
+    title: string;
+    description: string;
+    featured: HomeGalleryItem;
+    secondary: [HomeGalleryItem, HomeGalleryItem];
+  };
+  cta: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+};
+
 export type TranslationSchema = {
   common: {
     language: {
@@ -42,7 +91,7 @@ export type TranslationSchema = {
     rights: string;
   };
   pages: {
-    home: SimplePageContent;
+    home: HomeContent;
     about: SimplePageContent;
     technology: SimplePageContent;
     applications: SimplePageContent;
