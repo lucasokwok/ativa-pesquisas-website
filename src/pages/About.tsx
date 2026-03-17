@@ -59,6 +59,41 @@ const values = [
   },
 ];
 
+const identityHighlights = [
+  {
+    title: "(Edite) Inspiração arquitetônica",
+    description:
+      "(Edite) Texto curto sobre a inspiração da marca no Arco da Inovação.",
+  },
+  {
+    title: "(Edite) Conexão com a cidade",
+    description:
+      "(Edite) Texto curto sobre São José dos Campos como sede e referência tecnológica.",
+  },
+  {
+    title: "(Edite) Simbologia da marca",
+    description:
+      "(Edite) Texto curto sobre forma, conceito e significado visual da logo.",
+  },
+];
+
+const cityHighlights = [
+  {
+    title: "(Edite) Cidade-sede",
+    description:
+      "(Edite) Texto curto sobre São José dos Campos e sua relevância.",
+  },
+  {
+    title: "(Edite) Inovação e tecnologia",
+    description: "(Edite) Texto curto sobre o ambiente tecnológico da cidade.",
+  },
+  {
+    title: "(Edite) Identidade regional",
+    description:
+      "(Edite) Texto curto sobre o vínculo da Ativa com sua origem local.",
+  },
+];
+
 export default function About() {
   return (
     <div className="relative isolate overflow-x-hidden">
@@ -226,6 +261,112 @@ export default function About() {
                     </p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-border bg-muted py-16">
+          <div className="px-6 sm:px-8 lg:px-32">
+            <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+              <div>
+                <p className="text-xs tracking-[0.3em] uppercase text-subtle">
+                  Identidade visual
+                </p>
+
+                <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+                  (Edite) A logo da Ativa e sua inspiração no Arco da Inovação
+                </h2>
+
+                <p className="mt-3 leading-relaxed text-subtitle">
+                  (Edite) Texto principal explicando que a identidade visual da
+                  Ativa foi inspirada no Arco da Inovação, em São José dos
+                  Campos, e como isso se conecta com pesquisa, tecnologia e
+                  futuro.
+                </p>
+
+                <div className="mt-8 grid gap-4">
+                  {identityHighlights.map((item) => (
+                    <div
+                      key={item.title}
+                      className="rounded-2xl border border-border bg-bg p-5"
+                    >
+                      <h3 className="text-base font-semibold text-ink">
+                        {item.title}
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-subtitle">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="grid gap-4">
+                <div className="rounded-2xl border border-border bg-bg p-4">
+                  <div className="aspect-[4/3] rounded-xl bg-muted flex items-center justify-center text-text/60">
+                    LOGO DA ATIVA
+                  </div>
+                  <p className="mt-3 text-sm text-subtitle">
+                    (Edite) Legenda sobre a marca.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-border bg-bg p-4">
+                  <div className="aspect-[16/9] rounded-xl bg-muted flex items-center justify-center text-text/60">
+                    FOTO DO ARCO DA INOVAÇÃO
+                  </div>
+                  <p className="mt-3 text-sm text-subtitle">
+                    (Edite) Legenda sobre a inspiração arquitetônica.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-border bg-bg py-16">
+          <div className="px-6 sm:px-8 lg:px-32">
+            <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+              <div className="rounded-2xl border border-border bg-bg p-4">
+                <div className="aspect-[4/5] rounded-xl bg-muted flex items-center justify-center text-text/60">
+                  IMAGEM / SÃO JOSÉ DOS CAMPOS
+                </div>
+                <p className="mt-3 text-sm text-subtitle">
+                  (Edite) Legenda opcional sobre a cidade-sede.
+                </p>
+              </div>
+
+              <div>
+                <p className="text-xs tracking-[0.3em] uppercase text-subtle">
+                  Cidade-sede
+                </p>
+
+                <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+                  (Edite) São José dos Campos como parte da identidade da Ativa
+                </h2>
+
+                <p className="mt-3 leading-relaxed text-subtitle">
+                  (Edite) Texto principal sobre São José dos Campos ser uma das
+                  cidades mais tecnológicas do Brasil e como esse contexto
+                  fortalece a imagem e o posicionamento da Ativa Pesquisas.
+                </p>
+
+                <div className="mt-8 grid gap-4">
+                  {cityHighlights.map((item) => (
+                    <div
+                      key={item.title}
+                      className="rounded-2xl border border-border bg-muted p-5"
+                    >
+                      <h3 className="text-base font-semibold text-ink">
+                        {item.title}
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-subtitle">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
