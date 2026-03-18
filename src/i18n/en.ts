@@ -668,8 +668,44 @@ export const en: TranslationSchema = {
       },
     },
     contact: {
-      title: "Contact",
-      subtitle: "Get in touch with Ativa Pesquisas",
+      hero: {
+        eyebrow: "Contact",
+        title: "Get in touch with Ativa Pesquisas",
+        description: "Use the channel below to contact us.",
+      },
+      main: {
+        eyebrow: "Email",
+        title: "Get in touch",
+        description:
+          "(Edit) Short text about support, partnerships, projects or technical requests.",
+        email: "contato@ativapesquisas.com.br",
+        buttonLabel: "Send email",
+        imagePlaceholder: "IMAGE / INSTITUTIONAL BLOCK",
+        cards: [
+          {
+            eyebrow: "Main channel",
+            title: "Email",
+            description: "contato@ativapesquisas.com.br",
+          },
+          {
+            eyebrow: "(Edit)",
+            title: "(Edit) Information",
+            description: "(Edit) Complementary contact text.",
+          },
+          {
+            eyebrow: "(Edit)",
+            title: "(Edit) Information",
+            description: "(Edit) Complementary contact text.",
+          },
+        ],
+      },
+      cta: {
+        title: "Shall we talk?",
+        description:
+          "For institutional information, projects, partnerships or technical requests, contact us through the email below.",
+        primaryButton: "contato@ativapesquisas.com.br",
+        secondaryButton: "Learn about the company",
+      },
     },
     notFound: {
       title: "Page not found",

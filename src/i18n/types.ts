@@ -354,6 +354,35 @@ export type ProjectsContent = {
   };
 };
 
+export type ContactInfoCard = {
+  eyebrow: string;
+  title: string;
+  description: string;
+};
+
+export type ContactContent = {
+  hero: {
+    eyebrow: string;
+    title: string;
+    description: string;
+  };
+  main: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    email: string;
+    buttonLabel: string;
+    imagePlaceholder: string;
+    cards: [ContactInfoCard, ContactInfoCard, ContactInfoCard];
+  };
+  cta: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+};
+
 export type TranslationSchema = {
   common: {
     language: {
@@ -394,7 +423,7 @@ export type TranslationSchema = {
     technology: TechnologyContent;
     applications: ApplicationsContent;
     projects: ProjectsContent;
-    contact: SimplePageContent;
+    contact: ContactContent;
     notFound: {
       title: string;
       description: string;

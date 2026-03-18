@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
 import logoOutline from "../assets/home/home-bg-logo-outline.webp";
+import { useLanguage } from "../hooks/useLanguage";
 
 export default function Contact() {
+  const { t } = useLanguage();
+  const contact = t.pages.contact;
+
   return (
     <div className="relative isolate overflow-x-hidden">
       <img
@@ -24,15 +29,15 @@ export default function Contact() {
           <div className="px-6 sm:px-8 lg:px-32">
             <div className="flex flex-col gap-4">
               <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                Contato
+                {contact.hero.eyebrow}
               </p>
 
               <h1 className="max-w-4xl text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl">
-                Entre em contato com a Ativa Pesquisas
+                {contact.hero.title}
               </h1>
 
               <p className="max-w-2xl text-base leading-relaxed text-subtitle sm:text-lg">
-                Utilize o canal abaixo para entrar em contato.
+                {contact.hero.description}
               </p>
             </div>
           </div>
@@ -43,31 +48,30 @@ export default function Contact() {
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
               <div className="rounded-2xl border border-border bg-bg p-8 shadow-sm sm:p-10">
                 <p className="text-xs tracking-[0.3em] uppercase text-subtle">
-                  E-mail
+                  {contact.main.eyebrow}
                 </p>
 
                 <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-                  contato@ativapesquisas.com.br
+                  {contact.main.email}
                 </h2>
 
                 <p className="mt-4 max-w-2xl leading-relaxed text-subtitle">
-                  (Edite) Texto curto sobre atendimento, parcerias, projetos ou
-                  solicitações técnicas.
+                  {contact.main.description}
                 </p>
 
                 <div className="mt-8">
                   <a
-                    href="mailto:contato@ativapesquisas.com.br"
+                    href={`mailto:${contact.main.email}`}
                     className="btn btn-pill-gray-to-blue btn-lg"
                   >
-                    Enviar e-mail
+                    {contact.main.buttonLabel}
                   </a>
                 </div>
               </div>
 
               <div className="rounded-2xl border border-border bg-muted p-6 sm:p-8">
                 <div className="flex h-full min-h-[280px] items-center justify-center rounded-xl border border-border bg-bg text-text/60">
-                  IMAGEM / BLOCO INSTITUCIONAL
+                  {contact.main.imagePlaceholder}
                 </div>
               </div>
             </div>
@@ -77,39 +81,24 @@ export default function Contact() {
         <section className="border-t border-border bg-muted py-16">
           <div className="px-6 sm:px-8 lg:px-32">
             <div className="grid gap-4 md:grid-cols-3">
-              <div className="rounded-2xl border border-border bg-bg p-6 shadow-sm">
-                <p className="text-xs tracking-[0.25em] uppercase text-subtle">
-                  Canal principal
-                </p>
-                <p className="mt-3 text-base font-semibold text-ink">E-mail</p>
-                <p className="mt-2 text-sm leading-relaxed text-subtitle">
-                  contato@ativapesquisas.com.br
-                </p>
-              </div>
+              {contact.main.cards.map((card) => (
+                <div
+                  key={`${card.eyebrow}-${card.title}`}
+                  className="rounded-2xl border border-border bg-bg p-6 shadow-sm"
+                >
+                  <p className="text-xs tracking-[0.25em] uppercase text-subtle">
+                    {card.eyebrow}
+                  </p>
 
-              <div className="rounded-2xl border border-border bg-bg p-6 shadow-sm">
-                <p className="text-xs tracking-[0.25em] uppercase text-subtle">
-                  (Edite)
-                </p>
-                <p className="mt-3 text-base font-semibold text-ink">
-                  (Edite) Informação
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-subtitle">
-                  (Edite) Texto complementar de contato.
-                </p>
-              </div>
+                  <p className="mt-3 text-base font-semibold text-ink">
+                    {card.title}
+                  </p>
 
-              <div className="rounded-2xl border border-border bg-bg p-6 shadow-sm">
-                <p className="text-xs tracking-[0.25em] uppercase text-subtle">
-                  (Edite)
-                </p>
-                <p className="mt-3 text-base font-semibold text-ink">
-                  (Edite) Informação
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-subtitle">
-                  (Edite) Texto complementar de contato.
-                </p>
-              </div>
+                  <p className="mt-2 text-sm leading-relaxed text-subtitle">
+                    {card.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -118,28 +107,27 @@ export default function Contact() {
           <div className="px-6 sm:px-8 lg:px-32">
             <div className="rounded-2xl bg-bg/10 p-8 ring-1 ring-white/10 sm:p-10">
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                Vamos conversar?
+                {contact.cta.title}
               </h2>
 
               <p className="mt-3 max-w-2xl leading-relaxed text-bg/80">
-                Para informações institucionais, projetos, parcerias ou
-                solicitações técnicas, entre em contato pelo e-mail abaixo.
+                {contact.cta.description}
               </p>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="mailto:contato@ativapesquisas.com.br"
+                  href={`mailto:${contact.main.email}`}
                   className="btn rounded-full bg-bg px-8 py-4 text-base text-ink hover:-translate-y-[1px] hover:shadow-lg"
                 >
-                  contato@ativapesquisas.com.br
+                  {contact.cta.primaryButton}
                 </a>
 
-                <a
-                  href="/sobre"
-                  className="btn rounded-full border border-white/20 px-8 py-4 text-base text-bg hover:bg-bg/10 hover:-translate-y-[1px] hover:shadow-lg"
+                <Link
+                  to="/sobre"
+                  className="btn rounded-full border border-white/20 px-8 py-4 text-base text-bg hover:-translate-y-[1px] hover:bg-bg/10 hover:shadow-lg"
                 >
-                  Conhecer a empresa
-                </a>
+                  {contact.cta.secondaryButton}
+                </Link>
               </div>
             </div>
           </div>

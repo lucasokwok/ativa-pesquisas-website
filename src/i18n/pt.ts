@@ -665,8 +665,44 @@ export const pt: TranslationSchema = {
       },
     },
     contact: {
-      title: "Contato",
-      subtitle: "Fale com a Ativa Pesquisas",
+      hero: {
+        eyebrow: "Contato",
+        title: "Entre em contato com a Ativa Pesquisas",
+        description: "Utilize o canal abaixo para entrar em contato.",
+      },
+      main: {
+        eyebrow: "E-mail",
+        title: "Entre em contato",
+        description:
+          "(Edite) Texto curto sobre atendimento, parcerias, projetos ou solicitações técnicas.",
+        email: "contato@ativapesquisas.com.br",
+        buttonLabel: "Enviar e-mail",
+        imagePlaceholder: "IMAGEM / BLOCO INSTITUCIONAL",
+        cards: [
+          {
+            eyebrow: "Canal principal",
+            title: "E-mail",
+            description: "contato@ativapesquisas.com.br",
+          },
+          {
+            eyebrow: "(Edite)",
+            title: "(Edite) Informação",
+            description: "(Edite) Texto complementar de contato.",
+          },
+          {
+            eyebrow: "(Edite)",
+            title: "(Edite) Informação",
+            description: "(Edite) Texto complementar de contato.",
+          },
+        ],
+      },
+      cta: {
+        title: "Vamos conversar?",
+        description:
+          "Para informações institucionais, projetos, parcerias ou solicitações técnicas, entre em contato pelo e-mail abaixo.",
+        primaryButton: "contato@ativapesquisas.com.br",
+        secondaryButton: "Conhecer a empresa",
+      },
     },
     notFound: {
       title: "Página não encontrada",
