@@ -277,6 +277,83 @@ export type AboutContent = {
   };
 };
 
+export type ProjectsFeaturedItem = {
+  label: string;
+  title: string;
+  description: string;
+};
+
+export type ProjectsPortfolioCard = {
+  placeholder: string;
+  category: string;
+  title: string;
+  description: string;
+};
+
+export type ProjectsStage = {
+  step: string;
+  title: string;
+  description: string;
+};
+
+export type ProjectsHighlight = {
+  title: string;
+  description: string;
+};
+
+export type ProjectsMetric = {
+  label: string;
+  value: string;
+  description: string;
+};
+
+export type ProjectsContent = {
+  hero: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    mainPlaceholder: string;
+    mainCaption: string;
+    featuredItems: [ProjectsFeaturedItem, ProjectsFeaturedItem];
+  };
+  portfolio: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: [
+      ProjectsPortfolioCard,
+      ProjectsPortfolioCard,
+      ProjectsPortfolioCard,
+      ProjectsPortfolioCard,
+      ProjectsPortfolioCard,
+      ProjectsPortfolioCard,
+    ];
+  };
+  methodology: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    steps: [ProjectsStage, ProjectsStage, ProjectsStage, ProjectsStage];
+  };
+  highlights: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: [ProjectsHighlight, ProjectsHighlight, ProjectsHighlight];
+    imagePlaceholder: string;
+    imageCaption: string;
+  };
+  metrics: {
+    items: [ProjectsMetric, ProjectsMetric, ProjectsMetric];
+  };
+  cta: {
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+};
+
 export type TranslationSchema = {
   common: {
     language: {
@@ -316,7 +393,7 @@ export type TranslationSchema = {
     about: AboutContent;
     technology: TechnologyContent;
     applications: ApplicationsContent;
-    projects: SimplePageContent;
+    projects: ProjectsContent;
     contact: SimplePageContent;
     notFound: {
       title: string;

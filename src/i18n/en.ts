@@ -525,8 +525,147 @@ export const en: TranslationSchema = {
       },
     },
     projects: {
-      title: "Projects",
-      subtitle: "Projects and initiatives",
+      hero: {
+        eyebrow: "Projects",
+        title: "(Edit) Projects and initiatives developed by Ativa Pesquisas",
+        description:
+          "(Edit) Introductory text about the nature of the projects, scopes of action and technical development.",
+        mainPlaceholder: "IMAGE / MAIN PROJECT",
+        mainCaption: "(Edit) Caption or summary of the featured project.",
+        featuredItems: [
+          {
+            label: "(Edit) Highlight",
+            title: "(Edit) Featured project 01",
+            description:
+              "(Edit) Short text about the project’s objective, scope and differential.",
+          },
+          {
+            label: "(Edit) Highlight",
+            title: "(Edit) Featured project 02",
+            description:
+              "(Edit) Short text about the project’s objective, scope and differential.",
+          },
+        ],
+      },
+      portfolio: {
+        eyebrow: "Project portfolio",
+        title: "(Edit) Projects across different fronts of action",
+        description:
+          "(Edit) Short text explaining the types of projects developed.",
+        cards: [
+          {
+            placeholder: "IMAGE",
+            category: "(Edit) Category",
+            title: "(Edit) Project 01",
+            description: "(Edit) Short project description.",
+          },
+          {
+            placeholder: "IMAGE",
+            category: "(Edit) Category",
+            title: "(Edit) Project 02",
+            description: "(Edit) Short project description.",
+          },
+          {
+            placeholder: "IMAGE",
+            category: "(Edit) Category",
+            title: "(Edit) Project 03",
+            description: "(Edit) Short project description.",
+          },
+          {
+            placeholder: "IMAGE",
+            category: "(Edit) Category",
+            title: "(Edit) Project 04",
+            description: "(Edit) Short project description.",
+          },
+          {
+            placeholder: "IMAGE",
+            category: "(Edit) Category",
+            title: "(Edit) Project 05",
+            description: "(Edit) Short project description.",
+          },
+          {
+            placeholder: "IMAGE",
+            category: "(Edit) Category",
+            title: "(Edit) Project 06",
+            description: "(Edit) Short project description.",
+          },
+        ],
+      },
+      methodology: {
+        eyebrow: "Methodology",
+        title: "(Edit) Project development stages",
+        description: "(Edit) Short text about how projects are conducted.",
+        steps: [
+          {
+            step: "01",
+            title: "(Edit) Research and diagnosis",
+            description: "(Edit) Short text about the stage.",
+          },
+          {
+            step: "02",
+            title: "(Edit) Technical development",
+            description: "(Edit) Short text about the stage.",
+          },
+          {
+            step: "03",
+            title: "(Edit) Validation and testing",
+            description: "(Edit) Short text about the stage.",
+          },
+          {
+            step: "04",
+            title: "(Edit) Application and follow-up",
+            description: "(Edit) Short text about the stage.",
+          },
+        ],
+      },
+      highlights: {
+        eyebrow: "Differentials",
+        title: "(Edit) What guides our projects",
+        description:
+          "(Edit) Brief text about the technical, applied and scientific approach.",
+        cards: [
+          {
+            title: "(Edit) Tailored solutions",
+            description: "(Edit) Short text.",
+          },
+          {
+            title: "(Edit) Scientific basis",
+            description: "(Edit) Short text.",
+          },
+          {
+            title: "(Edit) Practical application",
+            description: "(Edit) Short text.",
+          },
+        ],
+        imagePlaceholder: "IMAGE / PROJECT / APPLIED RESEARCH",
+        imageCaption: "(Edit) Optional caption.",
+      },
+      metrics: {
+        items: [
+          {
+            label: "(Edit)",
+            value: "00",
+            description: "(Edit) Indicator or number related to projects",
+          },
+          {
+            label: "(Edit)",
+            value: "00",
+            description: "(Edit) Indicator or number related to projects",
+          },
+          {
+            label: "(Edit)",
+            value: "00",
+            description: "(Edit) Indicator or number related to projects",
+          },
+        ],
+      },
+      cta: {
+        title: "(Edit) Want to develop a project with Ativa Pesquisas?",
+        description:
+          "(Edit) Short closing text and invitation to get in touch.",
+        primaryButton: "Get in touch",
+        secondaryButton: "View technology",
+      },
     },
     contact: {
       title: "Contact",
