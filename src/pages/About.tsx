@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import logoOutline from "../assets/home/home-bg-logo-outline.webp";
 import LogoCarousel from "../components/LogoCarousel";
-import { partners } from "../data/partners";
 import { useLanguage } from "../hooks/useLanguage";
+import { colleges } from "../data/colleges";
 
 export default function About() {
   const { t } = useLanguage();
@@ -351,7 +351,7 @@ export default function About() {
           </div>
 
           <div className="mt-10">
-            <LogoCarousel partners={partners} />
+            <LogoCarousel partners={colleges} />
           </div>
         </section>
 
