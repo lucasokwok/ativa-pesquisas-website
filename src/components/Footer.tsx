@@ -1,18 +1,19 @@
 export default function Footer() {
   return (
-    <footer className="relative z-30 bg-bg border-t border-border">
-      <div className="mx-auto w-full max-w-6xl px-6 sm:px-8 lg:px-32 py-5">
-        <div className="flex items-center justify-between gap-4">
-          <span className="text-sm text-subtle">
+    <footer className="relative z-30 border-t border-border bg-bg">
+      <div className="mx-auto w-full max-w-6xl px-4 py-5 sm:px-8 lg:px-32">
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <span className="text-center text-sm text-subtle sm:text-left">
             © {new Date().getFullYear()} Ativa Pesquisas
           </span>
 
           <div className="flex items-center gap-3">
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/company/ativapesquisas"
+              target="_blank"
+              rel="noreferrer"
               aria-label="LinkedIn"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg text-text/70 transition-all duration-200 hover:bg-brand hover:text-bg hover:border-brand hover:-translate-y-[1px] hover:shadow-lg"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg text-text/70 transition-all duration-200 hover:-translate-y-[1px] hover:border-brand hover:bg-brand hover:text-bg hover:shadow-lg"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -24,11 +25,12 @@ export default function Footer() {
               </svg>
             </a>
 
-            {/* Instagram */}
             <a
               href="https://www.instagram.com/ativapesquisas/"
+              target="_blank"
+              rel="noreferrer"
               aria-label="Instagram"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg text-text/70 transition-all duration-200 hover:bg-brand hover:text-bg hover:border-brand hover:-translate-y-[1px] hover:shadow-lg"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg text-text/70 transition-all duration-200 hover:-translate-y-[1px] hover:border-brand hover:bg-brand hover:text-bg hover:shadow-lg"
             >
               <svg
                 viewBox="0 0 24 24"
