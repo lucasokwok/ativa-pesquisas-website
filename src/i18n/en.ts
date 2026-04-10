@@ -38,72 +38,79 @@ export const en: TranslationSchema = {
     home: {
       hero: {
         eyebrow: "Ativa Pesquisas",
-        title:
-          "Concrete biocorrosion mitigation focused on sustainable durability",
+        title: "Protecting structures with ATIVA solutions",
         description:
-          "Research and development of special compositions with low porosity, high mechanical strength and microbiological neutralization in aggressive environments.",
+          "Research and development of special applications for concrete biocorrosion mitigation, focused on durability, performance, and sustainability in aggressive environments.",
         ctaLabel: "Learn about the company",
         images: {
           hero01Alt: "Laboratory and material characterization",
           hero02Alt: "Concrete structures in aggressive environments",
-          hero03Alt: "Application and performance in sustainable durability",
+          hero03Alt: "Applied research for sustainable durability",
         },
       },
       approach: {
-        eyebrow: "(Edit) Our approach",
-        title: "(Edit) Materials and compositions for aggressive environments",
+        eyebrow: "Our approach",
+        title: "Materials and compositions for aggressive environments",
         description:
-          "(Edit this text) Explain in 2–3 lines what you do, how you work and what your technical differential is.",
+          "Ativa develops special compositions and performs physical, chemical, and microbiological characterization to create advanced solutions for mitigating biocorrosion in concrete structures exposed to severe conditions.",
         bullets: [
-          "(Edit) Low porosity",
-          "(Edit) Microbiological neutralization",
-          "(Edit) Durability and sustainability",
+          "Low porosity and high mechanical strength",
+          "Mitigation of microbiological action",
+          "Durability based on science and applied research",
         ],
-        imagePlaceholder: "IMAGE HERE (replace with an <img />)",
-        imageCaption: "(Optional) short image caption/description.",
+        imagePlaceholder:
+          "Recommended image: research bench, cementitious samples, or laboratory testing",
+        imageCaption:
+          "Applied research focused on the development of high-performance compositions.",
       },
       technology: {
-        title: "(Edit) Technology and capabilities",
+        title: "Technology and capabilities",
         description:
-          "(Edit) A sentence explaining your laboratory, methods, validations, etc.",
+          "Ativa’s work integrates material development, advanced characterization, and experimental validation for applications in highly demanding technical environments.",
         cards: [
           {
-            title: "(Edit) Characterization",
-            description: "(Edit) SEM, XRD, Raman...",
+            title: "Characterization",
+            description:
+              "Physical, chemical, and microbiological analyses to understand material performance in aggressive environments.",
           },
           {
-            title: "(Edit) Development",
-            description: "(Edit) Binders, additives...",
+            title: "Development",
+            description:
+              "Formulation of special compositions using alternative binders and ecological residues.",
           },
           {
-            title: "(Edit) Testing",
-            description: "(Edit) Durability, strength...",
+            title: "Testing",
+            description:
+              "Evaluation of mechanical strength, porosity, durability, and interaction with microorganisms.",
           },
         ],
       },
       applications: {
-        title: "(Edit) Applications",
+        title: "Applications",
         description:
-          "(Edit) Mention sectors/environments where the solutions apply.",
+          "Ativa’s solutions are designed for structures subject to microbiological, chemical, and operational deterioration across different sectors.",
         featured: {
-          placeholder: "IMAGE 1 (replace with an <img />)",
-          caption: "(Edit) Application title/caption.",
+          placeholder:
+            "Recommended image: wastewater treatment plant or industrial structure",
+          caption: "Applications in environments exposed to biocorrosion.",
         },
         secondary: [
           {
-            placeholder: "IMAGE 2",
-            caption: "(Edit) Caption.",
+            placeholder:
+              "Recommended image: specimens or cementitious matrices",
+            caption: "Experimental validation in cement-based materials.",
           },
           {
-            placeholder: "IMAGE 3",
-            caption: "(Edit) Caption.",
+            placeholder:
+              "Recommended image: concrete in operation or humid industrial environment",
+            caption: "Durability in real-use conditions.",
           },
         ],
       },
       cta: {
-        title: "(Edit) Shall we talk about your project?",
+        title: "Shall we talk about your project?",
         description:
-          "(Edit) Short invitation for contact: diagnosis, proposal, partnership, etc.",
+          "Get in touch to discuss technical demands, development of special solutions, diagnostics, or applied research partnerships.",
         primaryButton: "Get in touch",
         secondaryButton: "View projects",
       },
@@ -111,161 +118,176 @@ export const en: TranslationSchema = {
     about: {
       hero: {
         eyebrow: "About",
-        title: "(Edit) The story of Ativa Pesquisas",
+        title: "The journey of Ativa Pesquisas",
         description:
-          "(Edit) Introductory text presenting the company, its origin and purpose.",
-        mainPlaceholder: "MAIN IMAGE / HISTORY",
-        trajectoryEyebrow: "(Edit)",
-        trajectoryTitle: "(Edit) Our journey",
+          "Ativa Pesquisas was born from the convergence of science, innovation, and practical application, with a focus on developing solutions to mitigate biocorrosion in concrete structures and extend the durability of materials in aggressive environments.",
+        mainPlaceholder:
+          "Recommended image: team, laboratory, or institutional company context",
+        trajectoryEyebrow: "Journey",
+        trajectoryTitle:
+          "Applied research that evolved into institutional work",
         trajectoryDescription:
-          "(Edit) Short text about the origin and evolution of Ativa Pesquisas.",
-        purposeEyebrow: "(Edit)",
-        purposeTitle: "(Edit) Purpose",
+          "The company originated from an academic and technological path dedicated to studying high-performance concrete and addressing deterioration caused by microorganisms in different structural contexts.",
+        purposeEyebrow: "Purpose",
+        purposeTitle: "Durability, innovation, and sustainability",
         purposeDescription:
-          "(Edit) Short text about mission, vision or strategic direction.",
+          "Ativa’s purpose is to turn technical and scientific knowledge into applicable, durable, and sustainable solutions for structures exposed to severe environments.",
       },
       founders: {
         eyebrow: "Founders",
-        title: "(Edit) Leadership and technical experience",
-        description: "(Edit) Short text introducing the three founders.",
+        title: "Leadership and technical experience",
+        description:
+          "Ativa brings together a multidisciplinary technical foundation with strong expertise in research, development, and material characterization.",
         items: [
           {
-            name: "(Edit) Dr. Fernando S. Ortega",
-            role: "(Edit) Co-founder",
-            bio: "(Edit) Short text about background, education, experience and contribution to Ativa Pesquisas.",
+            name: "Dr. Fernando S. Ortega",
+            role: "Co-founder",
+            bio: "He leads Ativa’s technical and scientific direction, contributing strategic vision to the development of special compositions, experimental validation, and the application of solutions focused on structural durability in aggressive environments.",
             linkedinLabel: "LinkedIn",
             linkedinUrl: "#",
-            photoPlaceholder: "FOUNDER PHOTO",
+            photoPlaceholder:
+              "Recommended image: professional portrait of the founder",
           },
           {
-            name: "(Edit) Dra. Ivone Regina de Oliveira",
-            role: "(Edit) Co-founder",
-            bio: "(Edit) Short text about background, education, experience and contribution to Ativa Pesquisas.",
+            name: "Dr. Ivone Regina de Oliveira",
+            role: "Co-founder",
+            bio: "She contributes her experience in applied research, materials, and characterization processes, combining technical rigor, scientific vision, and institutional direction in the development of Ativa’s solutions.",
             linkedinLabel: "LinkedIn",
             linkedinUrl: "#",
-            photoPlaceholder: "FOUNDER PHOTO",
+            photoPlaceholder:
+              "Recommended image: professional portrait of the founder",
           },
           {
-            name: "(Edit) Me. Indira Teixeira Oliveira",
-            role: "(Edit) Co-founder",
-            bio: "(Edit) Short text about background, education, experience and contribution to Ativa Pesquisas.",
+            name: "M.Sc. Indira Teixeira Oliveira",
+            role: "Co-founder",
+            bio: "She supports Ativa’s technical and institutional development, helping strengthen the company as a bridge between academic knowledge, technological development, and practical application.",
             linkedinLabel: "LinkedIn",
             linkedinUrl: "#",
-            photoPlaceholder: "FOUNDER PHOTO",
+            photoPlaceholder:
+              "Recommended image: professional portrait of the founder",
           },
         ],
       },
       timeline: {
         eyebrow: "Timeline",
-        title: "(Edit) Main milestones in the journey",
+        title: "Key milestones in our journey",
         description:
-          "(Edit) Short text contextualizing the company’s evolution.",
+          "Ativa’s evolution is marked by the connection between research, experimental validation, and application to real-world demands.",
         items: [
           {
-            year: "(Edit)",
-            title: "(Edit) Origin of the initiative",
+            year: "Origin",
+            title: "Beginning of applied research",
             description:
-              "(Edit) Short text about the start of the research, motivation and context.",
+              "The work began with studies focused on developing materials with greater strength and durability in environments subject to microbiological deterioration.",
           },
           {
-            year: "(Edit)",
-            title: "(Edit) Technical consolidation",
+            year: "Consolidation",
+            title: "Technical structuring of the proposal",
             description:
-              "(Edit) Short text about development, validation or institutional advancement.",
+              "As the studies matured, the work evolved to integrate special composition formulation, testing, and advanced characterization.",
           },
           {
-            year: "(Edit)",
-            title: "(Edit) Expansion and applications",
+            year: "Expansion",
+            title: "Broader range of applications",
             description:
-              "(Edit) Short text about the maturation of the project and evolution of operations.",
+              "Ativa expanded its expertise toward industrial settings, sanitation, storage systems, and other highly demanding technical areas.",
           },
         ],
       },
       logoInspiration: {
         eyebrow: "Visual identity",
-        title:
-          "(Edit) Ativa’s logo and its inspiration from the Arco da Inovação",
+        title: "Ativa’s brand and its connection to innovation",
         description:
-          "(Edit) Main text explaining that Ativa’s visual identity was inspired by the Arco da Inovação in São José dos Campos and how this connects with research, technology and future.",
+          "Ativa’s visual identity conveys technology, applied research, and a forward-looking vision. Its design reflects solidity, modernity, and a connection to an innovation ecosystem aligned with the company’s technical work.",
         cards: [
           {
-            title: "(Edit) Architectural inspiration",
+            title: "Architectural inspiration",
             description:
-              "(Edit) Short text about the brand’s inspiration from the Arco da Inovação.",
+              "The brand draws from shapes and references associated with innovation, structure, and technological progress.",
           },
           {
-            title: "(Edit) Connection with the city",
+            title: "Connection with the city",
             description:
-              "(Edit) Short text about São José dos Campos as headquarters and technological reference.",
+              "São José dos Campos reinforces this positioning by representing an environment recognized for technology, research, and development.",
           },
           {
-            title: "(Edit) Brand symbolism",
+            title: "Brand symbolism",
             description:
-              "(Edit) Short text about the shape, concept and visual meaning of the logo.",
+              "Ativa’s visual language suggests movement, robustness, and the construction of solutions grounded in technical knowledge.",
           },
         ],
-        logoPlaceholder: "ATIVA LOGO",
-        logoCaption: "(Edit) Caption about the brand.",
-        landmarkPlaceholder: "PHOTO OF ARCO DA INOVAÇÃO",
-        landmarkCaption: "(Edit) Caption about the architectural inspiration.",
+        logoPlaceholder:
+          "Recommended image: Ativa logo applied in an institutional context",
+        logoCaption: "The brand translates technology, research, and solidity.",
+        landmarkPlaceholder:
+          "Recommended image: urban or architectural reference from São José dos Campos",
+        landmarkCaption:
+          "The city context reinforces the company’s innovation-driven positioning.",
       },
       city: {
         eyebrow: "Headquarters city",
-        title: "(Edit) São José dos Campos as part of Ativa’s identity",
+        title: "São José dos Campos as part of Ativa’s identity",
         description:
-          "(Edit) Main text about São José dos Campos being one of the most technological cities in Brazil and how this context strengthens the image and positioning of Ativa Pesquisas.",
+          "Being based in São José dos Campos places Ativa close to an environment associated with technology, innovation, and scientific development, strengthening its institutional image and its connection with high-value technical solutions.",
         cards: [
           {
-            title: "(Edit) Headquarters city",
+            title: "Headquarters city",
             description:
-              "(Edit) Short text about São José dos Campos and its relevance.",
+              "Being located in São José dos Campos connects the company with a region recognized for its technological vocation.",
           },
           {
-            title: "(Edit) Innovation and technology",
+            title: "Innovation and technology",
             description:
-              "(Edit) Short text about the city’s technological environment.",
+              "The regional context reinforces Ativa’s proposal to work through science, development, and practical application.",
           },
           {
-            title: "(Edit) Regional identity",
+            title: "Regional identity",
             description:
-              "(Edit) Short text about Ativa’s bond with its local origin.",
+              "Its local origin is part of the brand narrative and the company’s institutional positioning.",
           },
         ],
-        imagePlaceholder: "IMAGE / SÃO JOSÉ DOS CAMPOS",
-        imageCaption: "(Edit) Optional caption about the headquarters city.",
+        imagePlaceholder:
+          "Recommended image: cityscape or architectural landmark of São José dos Campos",
+        imageCaption:
+          "São José dos Campos as an environment of innovation and technology.",
       },
       values: {
         eyebrow: "Identity",
-        title: "(Edit) Values that guide Ativa Pesquisas",
+        title: "Values that guide Ativa Pesquisas",
         description:
-          "(Edit) Brief text about the principles that support the company’s work.",
+          "Ativa’s work is guided by scientific commitment, practical application, and the continuous pursuit of durable and sustainable solutions.",
         cards: [
           {
-            title: "(Edit) Applied research",
-            description: "(Edit) Short text.",
+            title: "Applied research",
+            description:
+              "Transforming knowledge into technical solutions with real potential for use.",
           },
           {
-            title: "(Edit) Technical rigor",
-            description: "(Edit) Short text.",
+            title: "Technical rigor",
+            description:
+              "Developing and validating materials through testing, characterization, and careful analysis.",
           },
           {
-            title: "(Edit) Sustainability",
-            description: "(Edit) Short text.",
+            title: "Sustainability",
+            description:
+              "Pursuing performance and durability associated with responsible use of resources and materials.",
           },
         ],
-        imagePlaceholder: "IMAGE / INSTITUTION / RESEARCH",
-        imageCaption: "(Edit) Optional caption.",
+        imagePlaceholder:
+          "Recommended image: laboratory, technical team, or material under characterization",
+        imageCaption:
+          "Science, development, and application as the foundation of institutional work.",
       },
       partners: {
         eyebrow: "Partner institutions",
-        title: "(Edit) Institutional network and research collaboration",
+        title: "Institutional network and research collaboration",
         description:
-          "(Edit) Short text introducing the partner institutions carousel.",
+          "Ativa values its connection with universities, research centers, supporters, and institutions that strengthen technical development and the credibility of its work.",
       },
       cta: {
-        title: "(Edit) Want to know our journey better?",
+        title: "Want to learn more about our journey?",
         description:
-          "(Edit) Short closing text and invitation to get in touch.",
+          "Get in touch with Ativa to learn more about the company, its work, and possibilities for technical or institutional partnerships.",
         primaryButton: "Get in touch",
         secondaryButton: "View projects",
       },
@@ -273,113 +295,133 @@ export const en: TranslationSchema = {
     technology: {
       hero: {
         eyebrow: "Technology",
-        title: "(Edit) Technology and capabilities of Ativa Pesquisas",
-        description: "(Edit) Introductory text for the technology page.",
-        mainPlaceholder: "IMAGE / MAIN BLOCK",
-        block01Placeholder: "BLOCK 1",
-        block02Placeholder: "BLOCK 2",
+        title: "Technology and capabilities of Ativa Pesquisas",
+        description:
+          "Ativa combines applied research, material development, and experimental validation to create solutions focused on the durability of concrete structures in aggressive environments.",
+        mainPlaceholder:
+          "Recommended image: laboratory, microscopic analysis, or material under testing",
+        block01Placeholder:
+          "Recommended image: sample preparation or experimental process",
+        block02Placeholder:
+          "Recommended image: characterization equipment or mechanical testing",
       },
       capabilities: {
         eyebrow: "Capabilities",
-        title: "(Edit) Competencies and technological resources",
-        description: "(Edit) Short introductory text for the section.",
+        title: "Competencies and technological resources",
+        description:
+          "Ativa’s technological work integrates analysis, formulation, testing, and validation in a workflow oriented toward practical application.",
         cards: [
           {
-            title: "(Edit) Characterization",
+            title: "Characterization",
             description:
-              "(Edit) Short description of the technical capability.",
+              "Physical, chemical, and microbiological evaluation for a deeper understanding of material performance.",
           },
           {
-            title: "(Edit) Formulation",
+            title: "Formulation",
             description:
-              "(Edit) Short description of the technical capability.",
+              "Development of special compositions focused on strength, durability, and biocorrosion mitigation.",
           },
           {
-            title: "(Edit) Testing",
+            title: "Testing",
             description:
-              "(Edit) Short description of the technical capability.",
+              "Experimental verification of mechanical, microstructural, and environmental interaction properties.",
           },
           {
-            title: "(Edit) Validation",
+            title: "Validation",
             description:
-              "(Edit) Short description of the technical capability.",
+              "Technical confirmation in laboratory and applied contexts to guide solution use.",
           },
         ],
       },
       process: {
         eyebrow: "Process",
-        title: "(Edit) How the technology is applied",
-        description: "(Edit) Short text explaining the workflow.",
+        title: "How the technology is applied",
+        description:
+          "Ativa’s methodology starts with understanding the problem and progresses to the technical validation of the solution.",
         steps: [
           {
             step: "01",
-            title: "(Edit) Step 1",
-            description: "(Edit) Short step description.",
+            title: "Context diagnosis",
+            description:
+              "Assessment of use conditions, aggressive environment, and the technical requirements involved.",
           },
           {
             step: "02",
-            title: "(Edit) Step 2",
-            description: "(Edit) Short step description.",
+            title: "Composition development",
+            description:
+              "Material formulation and performance strategy definition according to the application.",
           },
           {
             step: "03",
-            title: "(Edit) Step 3",
-            description: "(Edit) Short step description.",
+            title: "Characterization and testing",
+            description:
+              "Evaluation of material behavior through laboratory analyses and specific tests.",
           },
           {
             step: "04",
-            title: "(Edit) Step 4",
-            description: "(Edit) Short step description.",
+            title: "Validation and direction",
+            description:
+              "Consolidation of results to guide application, continued research, or project evolution.",
           },
         ],
       },
       structure: {
         eyebrow: "Structure",
-        title: "(Edit) Laboratory, methods and development",
+        title: "Laboratory, methods, and development",
         description:
-          "(Edit) Brief text about technical structure and operation.",
+          "Ativa’s working structure is focused on research and technical development, with emphasis on testing, characterization, and performance analysis of materials.",
         cards: [
           {
-            title: "(Edit) Infrastructure",
-            description: "(Edit) Short description.",
+            title: "Infrastructure",
+            description:
+              "An environment dedicated to the study and validation of cement-based compositions and special materials.",
           },
           {
-            title: "(Edit) Methods",
-            description: "(Edit) Short description.",
+            title: "Methods",
+            description:
+              "Procedures based on experimental analysis, performance comparison, and technical evaluation.",
           },
           {
-            title: "(Edit) Applied research",
-            description: "(Edit) Short description.",
+            title: "Applied research",
+            description:
+              "Integration between scientific investigation and practical direction for real-world problems.",
           },
         ],
-        imagePlaceholder: "IMAGE / TECHNICAL STRUCTURE",
-        imageCaption: "(Edit) Optional caption.",
+        imagePlaceholder:
+          "Recommended image: technical structure, workbench, samples, or equipment",
+        imageCaption:
+          "Development guided by method, analysis, and experimental validation.",
       },
       indicators: {
         eyebrow: "Indicators",
-        title: "(Edit) Highlights of technological performance",
-        description: "(Edit) Short text to contextualize the highlights.",
+        title: "Highlights of technological performance",
+        description:
+          "Ativa’s technology stands out for combining research, characterization, and application in challenging environments.",
         items: [
           {
-            label: "(Edit)",
-            value: "00",
-            description: "(Edit) Indicator or technical milestone",
+            label: "Technical focus",
+            value: "360°",
+            description:
+              "Integration of development, testing, and technical interpretation of results.",
           },
           {
-            label: "(Edit)",
-            value: "00",
-            description: "(Edit) Indicator or technical milestone",
+            label: "Foundation",
+            value: "R&D",
+            description:
+              "Work supported by research and development of special applications.",
           },
           {
-            label: "(Edit)",
-            value: "00",
-            description: "(Edit) Indicator or technical milestone",
+            label: "Application",
+            value: "HIGH",
+            description:
+              "Focused on contexts with high demands for durability and performance.",
           },
         ],
       },
       cta: {
-        title: "(Edit) Want to better understand our technology?",
-        description: "(Edit) Short call-to-action text for contact or details.",
+        title: "Want to better understand our technology?",
+        description:
+          "Get in touch to learn more about Ativa’s technical capabilities and discuss possibilities for development, analysis, or partnership.",
         primaryButton: "Get in touch",
         secondaryButton: "View projects",
       },
@@ -387,139 +429,167 @@ export const en: TranslationSchema = {
     applications: {
       hero: {
         eyebrow: "Applications",
-        title:
-          "(Edit) Applications of the solutions developed by Ativa Pesquisas",
+        title: "Applications of the solutions developed by Ativa Pesquisas",
         description:
-          "(Edit) Introductory text about use contexts, sectors and environments where the technology can be applied.",
+          "Ativa’s solutions are designed for aggressive environments and structures requiring high durability, strength, and mitigation of deterioration processes induced by microorganisms.",
         featured: {
-          placeholder: "MAIN IMAGE / HIGHLIGHTED APPLICATION",
-          caption: "(Edit) Main caption or highlight of the application.",
+          placeholder:
+            "Recommended image: sanitation structure or wastewater pre-treatment environment",
+          caption:
+            "Application in contexts subject to biocorrosion and accelerated deterioration.",
         },
         secondary: [
           {
-            placeholder: "SECONDARY IMAGE 01",
-            caption: "(Edit) Short caption.",
+            placeholder:
+              "Recommended image: industrial area or environment with high humidity/aggressiveness",
+            caption: "Applications in severe industrial environments.",
           },
           {
-            placeholder: "SECONDARY IMAGE 02",
-            caption: "(Edit) Short caption.",
+            placeholder:
+              "Recommended image: material in field conditions or exposed specimens",
+            caption: "Performance validation under representative conditions.",
           },
         ],
       },
       fronts: {
         eyebrow: "Application fronts",
-        title: "(Edit) Sectors and operating environments",
+        title: "Sectors and operating environments",
         description:
-          "(Edit) Short text explaining the breadth of applications.",
+          "Ativa directs its technology toward contexts where concrete and other materials are subject to microbiological, chemical, and operational degradation.",
         cards: [
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Treatment plants",
+            placeholder:
+              "Recommended image: treatment plant or sanitation-related structure",
+            title: "Treatment plants",
             description:
-              "(Edit) Short text about the application in structures exposed to aggressive environments.",
+              "Applications in structures exposed to gases, humidity, sulfur, and intense microbiological activity.",
           },
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Industrial infrastructure",
+            placeholder:
+              "Recommended image: industrial environment or technical flooring",
+            title: "Industrial infrastructure",
             description:
-              "(Edit) Short text about the application in technical structures and facilities.",
+              "Use in facilities that demand greater resistance to deterioration processes and service wear.",
           },
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Chemical attack environments",
+            placeholder:
+              "Recommended image: chemically aggressive or corrosive area",
+            title: "Chemical attack environments",
             description:
-              "(Edit) Short text about the application in areas subject to accelerated degradation.",
+              "Solutions for structures exposed to conditions that favor accelerated material degradation.",
           },
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Storage systems",
+            placeholder: "Recommended image: reservoir, silo, or storage area",
+            title: "Storage systems",
             description:
-              "(Edit) Short text about the application in reservoirs, containment systems or special surfaces.",
+              "Applications in surfaces and structures requiring superior performance in contact with aggressive media.",
           },
         ],
       },
       gallery: {
         eyebrow: "Gallery",
-        title: "(Edit) Visual examples of applications",
+        title: "Visual examples of applications",
         description:
-          "(Edit) Short text introducing the image gallery and use contexts.",
+          "The images can reinforce the connection between research, testing, developed materials, and the operating environments of Ativa’s solutions.",
         items: [
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Application 01",
-            description: "(Edit) Short image caption.",
+            placeholder:
+              "Recommended image: specimens under controlled exposure",
+            title: "Experimental exposure",
+            description:
+              "Evaluation of the behavior of compositions in aggressive environments.",
           },
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Application 02",
-            description: "(Edit) Short image caption.",
+            placeholder:
+              "Recommended image: cementitious matrix or developed component",
+            title: "Applied formulation",
+            description:
+              "Development of materials focused on durability and performance.",
           },
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Application 03",
-            description: "(Edit) Short image caption.",
+            placeholder:
+              "Recommended image: microstructure under analysis or SEM image",
+            title: "Microstructural analysis",
+            description:
+              "Characterization to understand performance and microbiological colonization.",
           },
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Application 04",
-            description: "(Edit) Short image caption.",
+            placeholder:
+              "Recommended image: industrial structure or process area",
+            title: "Industrial context",
+            description:
+              "Applications in highly demanding operational environments.",
           },
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Application 05",
-            description: "(Edit) Short image caption.",
+            placeholder:
+              "Recommended image: sanitation structure or technical reservoir",
+            title: "Severe environment",
+            description:
+              "Use in conditions favorable to biocorrosion and accelerated deterioration.",
           },
         ],
       },
       contexts: {
         eyebrow: "Use contexts",
-        title: "(Edit) Applications in different technical scenarios",
+        title: "Applications in different technical scenarios",
         description:
-          "(Edit) Brief text about adapting the technology to different demands and environments.",
+          "Ativa’s technology can be adapted to different fronts, from sanitation to special structures with high durability requirements.",
         cards: [
           {
-            title: "(Edit) Sanitation",
-            description: "(Edit) Short text about this application front.",
+            title: "Sanitation",
+            description:
+              "Solutions for structures subject to humidity, aggressive gases, and intense microbiological action.",
           },
           {
-            title: "(Edit) Industry",
-            description: "(Edit) Short text about this application front.",
+            title: "Industry",
+            description:
+              "Applications in productive environments that demand greater material performance and resistance.",
           },
           {
-            title: "(Edit) Storage",
-            description: "(Edit) Short text about this application front.",
+            title: "Storage",
+            description:
+              "Use in areas exposed to inputs, aggressive agents, or critical service conditions.",
           },
           {
-            title: "(Edit) Special structures",
-            description: "(Edit) Short text about this application front.",
+            title: "Special structures",
+            description:
+              "Development tailored to specific demands, focused on technical performance and service life.",
           },
         ],
-        imagePlaceholder: "IMAGE / TECHNICAL APPLICATION",
-        imageCaption: "(Edit) Optional image caption.",
+        imagePlaceholder:
+          "Recommended image: technical application in a real structure or operational environment",
+        imageCaption:
+          "Technology adapted to different contexts of use and technical demand.",
       },
       extra: {
         items: [
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Complementary application 01",
-            description: "(Edit) Short text.",
+            placeholder:
+              "Recommended image: mechanical test or compression test",
+            title: "Laboratory validation",
+            description:
+              "Tests that support performance verification of the developed materials.",
           },
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Complementary application 02",
-            description: "(Edit) Short text.",
+            placeholder:
+              "Recommended image: coated samples or visual comparison",
+            title: "Comparison of solutions",
+            description:
+              "Analysis between compositions and protection strategies in aggressive environments.",
           },
           {
-            placeholder: "IMAGE",
-            title: "(Edit) Complementary application 03",
-            description: "(Edit) Short text.",
+            placeholder:
+              "Recommended image: field structure or pilot application",
+            title: "Complementary application",
+            description:
+              "Visual record of contexts where research approaches practice.",
           },
         ],
       },
       cta: {
-        title: "(Edit) Want to evaluate the application in your context?",
+        title: "Would you like to assess the application in your context?",
         description:
-          "(Edit) Closing text inviting contact or technical assessment.",
+          "Get in touch to discuss technical demands, aggressive environments, and possible applications of Ativa’s solutions.",
         primaryButton: "Get in touch",
         secondaryButton: "View technology",
       },
@@ -527,142 +597,167 @@ export const en: TranslationSchema = {
     projects: {
       hero: {
         eyebrow: "Projects",
-        title: "(Edit) Projects and initiatives developed by Ativa Pesquisas",
+        title: "Projects and initiatives developed by Ativa Pesquisas",
         description:
-          "(Edit) Introductory text about the nature of the projects, scopes of action and technical development.",
-        mainPlaceholder: "IMAGE / MAIN PROJECT",
-        mainCaption: "(Edit) Caption or summary of the featured project.",
+          "Ativa develops projects based on applied research, material formulation, and experimental validation, with a focus on performance, durability, and biocorrosion mitigation.",
+        mainPlaceholder:
+          "Recommended image: main project, specimens, or technical application",
+        mainCaption:
+          "Project focused on developing high-performance concrete for aggressive environments.",
         featuredItems: [
           {
-            label: "(Edit) Highlight",
-            title: "(Edit) Featured project 01",
+            label: "Featured project",
+            title: "ATIVA compositions: high-performance concrete",
             description:
-              "(Edit) Short text about the project’s objective, scope and differential.",
+              "A project dedicated to developing a composition with high mechanical strength, low porosity, and greater resistance to biocorrosion in structures exposed to severe environments.",
           },
           {
-            label: "(Edit) Highlight",
-            title: "(Edit) Featured project 02",
+            label: "Featured project",
+            title: "Electron microscopy and microbiological adhesion analysis",
             description:
-              "(Edit) Short text about the project’s objective, scope and differential.",
+              "A research line focused on understanding microbial colonization on concrete surfaces and the effect of coatings in inhibiting this adhesion.",
           },
         ],
       },
       portfolio: {
         eyebrow: "Project portfolio",
-        title: "(Edit) Projects across different fronts of action",
+        title: "Projects across different fronts of action",
         description:
-          "(Edit) Short text explaining the types of projects developed.",
+          "Ativa’s projects connect material development, characterization, and application in highly demanding technical scenarios.",
         cards: [
           {
-            placeholder: "IMAGE",
-            category: "(Edit) Category",
-            title: "(Edit) Project 01",
-            description: "(Edit) Short project description.",
+            placeholder:
+              "Recommended image: concrete in a sanitation environment",
+            category: "Durability",
+            title: "Concrete for treatment plant structures",
+            description:
+              "Project focused on structures subject to biocorrosion in wastewater pre-treatment areas.",
           },
           {
-            placeholder: "IMAGE",
-            category: "(Edit) Category",
-            title: "(Edit) Project 02",
-            description: "(Edit) Short project description.",
+            placeholder:
+              "Recommended image: industrial environment or process structure",
+            category: "Industrial application",
+            title: "Concrete for aggressive industrial environments",
+            description:
+              "Development of solutions for contexts with a high concentration of aggressive agents.",
           },
           {
-            placeholder: "IMAGE",
-            category: "(Edit) Category",
-            title: "(Edit) Project 03",
-            description: "(Edit) Short project description.",
+            placeholder: "Recommended image: specimens or comparative samples",
+            category: "Applied research",
+            title:
+              "Comparison between conventional composition and ATIVA composition",
+            description:
+              "Experimental evaluation of the performance of different compositions under controlled exposure.",
           },
           {
-            placeholder: "IMAGE",
-            category: "(Edit) Category",
-            title: "(Edit) Project 04",
-            description: "(Edit) Short project description.",
+            placeholder:
+              "Recommended image: compression test or mechanical validation",
+            category: "Testing",
+            title: "Mechanical performance validation",
+            description:
+              "Strength and performance testing to provide technical verification of the formulations.",
           },
           {
-            placeholder: "IMAGE",
-            category: "(Edit) Category",
-            title: "(Edit) Project 05",
-            description: "(Edit) Short project description.",
+            placeholder: "Recommended image: SEM image or analyzed surface",
+            category: "Characterization",
+            title: "Microstructural analysis by SEM",
+            description:
+              "Study of microorganism adhesion and surface behavior of concrete.",
           },
           {
-            placeholder: "IMAGE",
-            category: "(Edit) Category",
-            title: "(Edit) Project 06",
-            description: "(Edit) Short project description.",
+            placeholder:
+              "Recommended image: coating, protected surface, or treated sample",
+            category: "Protection",
+            title: "Evaluation of coating effects",
+            description:
+              "Investigation of strategies to reduce microbiological adhesion and increase durability.",
           },
         ],
       },
       methodology: {
         eyebrow: "Methodology",
-        title: "(Edit) Project development stages",
-        description: "(Edit) Short text about how projects are conducted.",
+        title: "Project development stages",
+        description:
+          "Ativa’s projects follow a technical flow that connects diagnosis, development, testing, and application guidance.",
         steps: [
           {
             step: "01",
-            title: "(Edit) Research and diagnosis",
-            description: "(Edit) Short text about the stage.",
+            title: "Research and diagnosis",
+            description:
+              "Assessment of the problem, environment, and technical requirements.",
           },
           {
             step: "02",
-            title: "(Edit) Technical development",
-            description: "(Edit) Short text about the stage.",
+            title: "Technical development",
+            description:
+              "Formulation of compositions, definition of strategies, and experimental preparation.",
           },
           {
             step: "03",
-            title: "(Edit) Validation and testing",
-            description: "(Edit) Short text about the stage.",
+            title: "Validation and testing",
+            description:
+              "Execution of tests and analyses to verify performance and material behavior.",
           },
           {
             step: "04",
-            title: "(Edit) Application and follow-up",
-            description: "(Edit) Short text about the stage.",
+            title: "Application and follow-up",
+            description:
+              "Interpretation of results to guide use, solution refinement, or project continuity.",
           },
         ],
       },
       highlights: {
         eyebrow: "Differentials",
-        title: "(Edit) What guides our projects",
+        title: "What guides our projects",
         description:
-          "(Edit) Brief text about the technical, applied and scientific approach.",
+          "Each Ativa project is conducted with a focus on applicability, scientific basis, and response to real durability challenges.",
         cards: [
           {
-            title: "(Edit) Tailored solutions",
-            description: "(Edit) Short text.",
+            title: "Tailored solutions",
+            description:
+              "Development guided by the specific conditions of each environment and demand.",
           },
           {
-            title: "(Edit) Scientific basis",
-            description: "(Edit) Short text.",
+            title: "Scientific foundation",
+            description:
+              "Technical decisions supported by testing, characterization, and experimental interpretation.",
           },
           {
-            title: "(Edit) Practical application",
-            description: "(Edit) Short text.",
+            title: "Practical application",
+            description:
+              "Research designed to generate solutions with concrete relevance in field and operational settings.",
           },
         ],
-        imagePlaceholder: "IMAGE / PROJECT / APPLIED RESEARCH",
-        imageCaption: "(Edit) Optional caption.",
+        imagePlaceholder:
+          "Recommended image: applied research, testing, or development context",
+        imageCaption:
+          "Projects guided by science, performance, and real-world application.",
       },
       metrics: {
         items: [
           {
-            label: "(Edit)",
-            value: "00",
-            description: "(Edit) Indicator or number related to projects",
+            label: "Focus",
+            value: "R&D",
+            description: "Projects structured around research and development.",
           },
           {
-            label: "(Edit)",
-            value: "00",
-            description: "(Edit) Indicator or number related to projects",
+            label: "Approach",
+            value: "MULTI",
+            description:
+              "Integration of mechanical, chemical, microbiological, and microstructural analysis.",
           },
           {
-            label: "(Edit)",
-            value: "00",
-            description: "(Edit) Indicator or number related to projects",
+            label: "Goal",
+            value: "SERVICE LIFE",
+            description:
+              "A constant focus on increasing structural durability and performance.",
           },
         ],
       },
       cta: {
-        title: "(Edit) Want to develop a project with Ativa Pesquisas?",
+        title: "Would you like to develop a project with Ativa Pesquisas?",
         description:
-          "(Edit) Short closing text and invitation to get in touch.",
+          "Get in touch to discuss technical challenges, specific demands, or possibilities for applied research partnerships.",
         primaryButton: "Get in touch",
         secondaryButton: "View technology",
       },
@@ -671,16 +766,18 @@ export const en: TranslationSchema = {
       hero: {
         eyebrow: "Contact",
         title: "Get in touch with Ativa Pesquisas",
-        description: "Use the channel below to contact us.",
+        description:
+          "Use the channels below to contact Ativa about projects, partnerships, institutional matters, or technical demands.",
       },
       main: {
-        eyebrow: "Email",
+        eyebrow: "Institutional contact",
         title: "Get in touch",
         description:
-          "(Edit) Short text about support, partnerships, projects or technical requests.",
+          "Ativa is available for conversations about applied research, development of special solutions, partnerships, analyses, and technical demands related to structural durability in aggressive environments.",
         email: "contato@ativapesquisas.com.br",
         buttonLabel: "Send email",
-        imagePlaceholder: "IMAGE / INSTITUTIONAL BLOCK",
+        imagePlaceholder:
+          "Recommended image: institutional block, team, or laboratory",
         cards: [
           {
             eyebrow: "Main channel",
@@ -688,21 +785,21 @@ export const en: TranslationSchema = {
             description: "contato@ativapesquisas.com.br",
           },
           {
-            eyebrow: "(Edit)",
-            title: "(Edit) Information",
-            description: "(Edit) Complementary contact text.",
+            eyebrow: "Phone",
+            title: "Contact",
+            description: "+55 12 99726-1411",
           },
           {
-            eyebrow: "(Edit)",
-            title: "(Edit) Information",
-            description: "(Edit) Complementary contact text.",
+            eyebrow: "Location",
+            title: "Institutional base",
+            description: "São José dos Campos, Brazil",
           },
         ],
       },
       cta: {
         title: "Shall we talk?",
         description:
-          "For institutional information, projects, partnerships or technical requests, contact us through the email below.",
+          "For institutional information, projects, partnerships, or technical requests, contact us through the email below.",
         primaryButton: "contato@ativapesquisas.com.br",
         secondaryButton: "Learn about the company",
       },
