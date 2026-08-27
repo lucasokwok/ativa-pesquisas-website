@@ -4,7 +4,9 @@ import hero02 from "../assets/home/home-hero-02.webp";
 import hero03 from "../assets/home/home-hero-03.webp";
 import logoOutline from "../assets/home/home-bg-logo-outline.webp";
 import LogoCarousel from "../components/LogoCarousel";
+import ContentImage from "../components/ContentImage";
 import { partners } from "../data/partners";
+import { siteImages } from "../data/siteImages";
 import { useLanguage } from "../hooks/useLanguage";
 
 export default function Home() {
@@ -112,8 +114,11 @@ export default function Home() {
               </div>
 
               <div className="rounded-xl bg-bg/10 p-5 ring-1 ring-white/10 sm:rounded-2xl sm:p-6">
-                <div className="flex aspect-[16/10] items-center justify-center rounded-xl bg-bg/10 px-4 text-center text-sm text-bg/70 sm:text-base">
-                  {home.approach.imagePlaceholder}
+                <div className="aspect-[16/10] overflow-hidden rounded-xl bg-bg/10">
+                  <ContentImage
+                    src={siteImages.home.approach}
+                    alt={home.approach.imageCaption}
+                  />
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-bg/70">
                   {home.approach.imageCaption}
@@ -164,8 +169,11 @@ export default function Home() {
 
             <div className="mt-8 grid gap-4 sm:mt-10 lg:grid-cols-3">
               <div className="rounded-xl border border-border bg-bg p-4 lg:col-span-2 sm:rounded-2xl">
-                <div className="flex aspect-[16/9] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {home.applications.featured.placeholder}
+                <div className="aspect-[16/9] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.home.applications[0]}
+                    alt={home.applications.featured.caption}
+                  />
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-subtitle">
                   {home.applications.featured.caption}
@@ -173,13 +181,16 @@ export default function Home() {
               </div>
 
               <div className="grid gap-4">
-                {home.applications.secondary.map((item) => (
+                {home.applications.secondary.map((item, index) => (
                   <div
                     key={item.placeholder}
                     className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl"
                   >
-                    <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                      {item.placeholder}
+                    <div className="aspect-[4/3] overflow-hidden rounded-xl bg-muted">
+                      <ContentImage
+                        src={siteImages.home.applications[index + 1]}
+                        alt={item.caption}
+                      />
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-subtitle">
                       {item.caption}

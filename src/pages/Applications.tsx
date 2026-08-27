@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import logoOutline from "../assets/home/home-bg-logo-outline.webp";
+import ContentImage from "../components/ContentImage";
 import { useLanguage } from "../hooks/useLanguage";
+import { siteImages } from "../data/siteImages";
 
 export default function Applications() {
   const { t } = useLanguage();
@@ -48,8 +50,12 @@ export default function Applications() {
           <div className="mt-8 px-4 sm:mt-10 sm:px-4 lg:px-10">
             <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
               <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                <div className="flex aspect-[16/9] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {applications.hero.featured.placeholder}
+                <div className="aspect-[16/9] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.applications.hero[0]}
+                    alt={applications.hero.featured.caption}
+                    eager
+                  />
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-subtitle">
                   {applications.hero.featured.caption}
@@ -57,13 +63,16 @@ export default function Applications() {
               </div>
 
               <div className="grid gap-4">
-                {applications.hero.secondary.map((item) => (
+                {applications.hero.secondary.map((item, index) => (
                   <div
                     key={item.placeholder}
                     className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl"
                   >
-                    <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                      {item.placeholder}
+                    <div className="aspect-[4/3] overflow-hidden rounded-xl bg-muted">
+                      <ContentImage
+                        src={siteImages.applications.hero[index + 1]}
+                        alt={item.caption}
+                      />
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-subtitle">
                       {item.caption}
@@ -92,13 +101,16 @@ export default function Applications() {
             </div>
 
             <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 xl:grid-cols-4">
-              {applications.fronts.cards.map((card) => (
+              {applications.fronts.cards.map((card, index) => (
                 <div
                   key={card.title}
                   className="rounded-xl border border-border bg-bg p-5 shadow-sm sm:rounded-2xl sm:p-6"
                 >
-                  <div className="mb-4 flex aspect-[4/3] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                    {card.placeholder}
+                  <div className="mb-4 aspect-[4/3] overflow-hidden rounded-xl bg-muted">
+                    <ContentImage
+                      src={siteImages.applications.fronts[index]}
+                      alt={card.title}
+                    />
                   </div>
 
                   <h3 className="text-base font-semibold text-ink">
@@ -144,11 +156,14 @@ export default function Applications() {
                     <div
                       className={
                         index === 0
-                          ? "flex aspect-[16/9] items-center justify-center rounded-xl bg-bg/10 px-4 text-center text-sm text-bg/65 sm:text-base"
-                          : "flex aspect-[4/3] items-center justify-center rounded-xl bg-bg/10 px-4 text-center text-sm text-bg/65 sm:text-base"
+                          ? "aspect-[16/9] overflow-hidden rounded-xl bg-bg/10"
+                          : "aspect-[4/3] overflow-hidden rounded-xl bg-bg/10"
                       }
                     >
-                      {item.placeholder}
+                      <ContentImage
+                        src={siteImages.applications.gallery[index]}
+                        alt={item.title}
+                      />
                     </div>
 
                     <h3 className="mt-4 text-base font-semibold">
@@ -199,8 +214,11 @@ export default function Applications() {
               </div>
 
               <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                <div className="flex aspect-[4/5] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {applications.contexts.imagePlaceholder}
+                <div className="aspect-[4/5] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.applications.contexts}
+                    alt={applications.contexts.imageCaption}
+                  />
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-subtitle">
                   {applications.contexts.imageCaption}
@@ -213,13 +231,16 @@ export default function Applications() {
         <section className="border-t border-border bg-bg py-12 sm:py-16">
           <div className="px-4 sm:px-8 lg:px-32">
             <div className="grid gap-4 md:grid-cols-3">
-              {applications.extra.items.map((item) => (
+              {applications.extra.items.map((item, index) => (
                 <div
                   key={item.title}
                   className="rounded-xl border border-border bg-bg p-5 shadow-sm sm:rounded-2xl sm:p-6"
                 >
-                  <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                    {item.placeholder}
+                  <div className="aspect-[4/3] overflow-hidden rounded-xl bg-muted">
+                    <ContentImage
+                      src={siteImages.applications.extra[index]}
+                      alt={item.title}
+                    />
                   </div>
 
                   <h3 className="mt-4 text-base font-semibold text-ink">

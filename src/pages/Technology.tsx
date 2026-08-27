@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import logoOutline from "../assets/home/home-bg-logo-outline.webp";
 import LogoCarousel from "../components/LogoCarousel";
+import ContentImage from "../components/ContentImage";
 import { partners } from "../data/partners";
+import { siteImages } from "../data/siteImages";
 import { useLanguage } from "../hooks/useLanguage";
 
 export default function Technology() {
@@ -50,21 +52,31 @@ export default function Technology() {
           <div className="mt-8 px-4 sm:mt-10 sm:px-4 lg:px-10">
             <div className="grid gap-4 lg:grid-cols-[1.3fr_0.7fr]">
               <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                <div className="flex aspect-[16/9] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {technology.hero.mainPlaceholder}
+                <div className="aspect-[16/9] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.technology.hero[0]}
+                    alt={technology.hero.mainPlaceholder}
+                    eager
+                  />
                 </div>
               </div>
 
               <div className="grid gap-4">
                 <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                  <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                    {technology.hero.block01Placeholder}
+                  <div className="aspect-[4/3] overflow-hidden rounded-xl bg-muted">
+                    <ContentImage
+                      src={siteImages.technology.hero[1]}
+                      alt={technology.hero.block01Placeholder}
+                    />
                   </div>
                 </div>
 
                 <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                  <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                    {technology.hero.block02Placeholder}
+                  <div className="aspect-[4/3] overflow-hidden rounded-xl bg-muted">
+                    <ContentImage
+                      src={siteImages.technology.hero[2]}
+                      alt={technology.hero.block02Placeholder}
+                    />
                   </div>
                 </div>
               </div>
@@ -185,8 +197,11 @@ export default function Technology() {
               </div>
 
               <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                <div className="flex aspect-[4/5] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {technology.structure.imagePlaceholder}
+                <div className="aspect-[4/5] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.technology.structure}
+                    alt={technology.structure.imageCaption}
+                  />
                 </div>
 
                 <p className="mt-3 text-sm leading-relaxed text-subtitle">

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import logoOutline from "../assets/home/home-bg-logo-outline.webp";
+import ContentImage from "../components/ContentImage";
 import { useLanguage } from "../hooks/useLanguage";
+import { siteImages } from "../data/siteImages";
 
 export default function Projects() {
   const { t } = useLanguage();
@@ -48,8 +50,12 @@ export default function Projects() {
           <div className="mt-8 px-4 sm:mt-10 sm:px-4 lg:px-10">
             <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
               <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                <div className="flex aspect-[16/9] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {projects.hero.mainPlaceholder}
+                <div className="aspect-[16/9] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.projects.hero}
+                    alt={projects.hero.mainCaption}
+                    eager
+                  />
                 </div>
 
                 <p className="mt-3 text-sm leading-relaxed text-subtitle">
@@ -98,13 +104,16 @@ export default function Projects() {
             </div>
 
             <div className="mt-8 grid gap-4 sm:mt-10 md:grid-cols-2 xl:grid-cols-3">
-              {projects.portfolio.cards.map((project) => (
+              {projects.portfolio.cards.map((project, index) => (
                 <article
                   key={project.title}
                   className="rounded-xl border border-border bg-bg p-5 shadow-sm sm:rounded-2xl sm:p-6"
                 >
-                  <div className="mb-5 flex aspect-[4/3] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                    {project.placeholder}
+                  <div className="mb-5 aspect-[4/3] overflow-hidden rounded-xl bg-muted">
+                    <ContentImage
+                      src={siteImages.projects.portfolio[index]}
+                      alt={project.title}
+                    />
                   </div>
 
                   <p className="text-[11px] tracking-[0.22em] uppercase text-subtle sm:text-xs sm:tracking-[0.25em]">
@@ -200,8 +209,11 @@ export default function Projects() {
               </div>
 
               <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                <div className="flex aspect-[4/5] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {projects.highlights.imagePlaceholder}
+                <div className="aspect-[4/5] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.projects.highlights}
+                    alt={projects.highlights.imageCaption}
+                  />
                 </div>
 
                 <p className="mt-3 text-sm leading-relaxed text-subtitle">

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import logoOutline from "../assets/home/home-bg-logo-outline.webp";
+import ContentImage from "../components/ContentImage";
 import { useLanguage } from "../hooks/useLanguage";
+import { siteImages } from "../data/siteImages";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -73,8 +75,11 @@ export default function Contact() {
               </div>
 
               <div className="rounded-xl border border-border bg-muted p-4 sm:rounded-2xl sm:p-8">
-                <div className="flex h-full min-h-[220px] items-center justify-center rounded-xl border border-border bg-bg px-4 text-center text-sm text-text/60 sm:min-h-[280px] sm:text-base">
-                  {contact.main.imagePlaceholder}
+                <div className="h-full min-h-[220px] overflow-hidden rounded-xl border border-border bg-bg sm:min-h-[280px]">
+                  <ContentImage
+                    src={siteImages.contact}
+                    alt={contact.main.imagePlaceholder}
+                  />
                 </div>
               </div>
             </div>

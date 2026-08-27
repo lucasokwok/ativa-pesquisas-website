@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import logoOutline from "../assets/home/home-bg-logo-outline.webp";
 import LogoCarousel from "../components/LogoCarousel";
+import ContentImage from "../components/ContentImage";
 import { useLanguage } from "../hooks/useLanguage";
 import { colleges } from "../data/colleges";
+import { siteImages } from "../data/siteImages";
 
 export default function About() {
   const { t } = useLanguage();
@@ -50,8 +52,12 @@ export default function About() {
           <div className="mt-8 px-4 sm:mt-10 sm:px-4 lg:px-10">
             <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
               <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                <div className="flex aspect-[16/9] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {about.hero.mainPlaceholder}
+                <div className="aspect-[16/9] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.about.hero}
+                    alt={about.hero.mainPlaceholder}
+                    eager
+                  />
                 </div>
               </div>
 
@@ -105,14 +111,18 @@ export default function About() {
             </div>
 
             <div className="mt-8 grid gap-5 sm:mt-10 sm:gap-6 xl:grid-cols-3">
-              {about.founders.items.map((founder) => (
+              {about.founders.items.map((founder, index) => (
                 <article
                   key={founder.name}
                   className="overflow-hidden rounded-xl border border-border bg-bg shadow-sm sm:rounded-2xl"
                 >
                   <div className="p-4">
-                    <div className="flex aspect-[4/5] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                      {founder.photoPlaceholder}
+                    <div className="aspect-square overflow-hidden rounded-xl bg-muted">
+                      <ContentImage
+                        src={siteImages.about.founders[index]}
+                        alt={founder.name}
+                        className="object-center"
+                      />
                     </div>
                   </div>
 
@@ -221,8 +231,11 @@ export default function About() {
 
               <div className="grid gap-4">
                 <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                  <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                    {about.logoInspiration.logoPlaceholder}
+                  <div className="aspect-[4/3] overflow-hidden rounded-xl bg-muted">
+                    <ContentImage
+                      src={siteImages.about.logo}
+                      alt={about.logoInspiration.logoCaption}
+                    />
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-subtitle">
                     {about.logoInspiration.logoCaption}
@@ -230,8 +243,11 @@ export default function About() {
                 </div>
 
                 <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                  <div className="flex aspect-[16/9] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                    {about.logoInspiration.landmarkPlaceholder}
+                  <div className="aspect-[16/9] overflow-hidden rounded-xl bg-muted">
+                    <ContentImage
+                      src={siteImages.about.landmark}
+                      alt={about.logoInspiration.landmarkCaption}
+                    />
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-subtitle">
                     {about.logoInspiration.landmarkCaption}
@@ -246,8 +262,12 @@ export default function About() {
           <div className="px-4 sm:px-8 lg:px-32">
             <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-10">
               <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                <div className="flex aspect-[4/5] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {about.city.imagePlaceholder}
+                <div className="aspect-[4/5] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.about.city}
+                    alt={about.city.imageCaption}
+                    className="object-center"
+                  />
                 </div>
 
                 <p className="mt-3 text-sm leading-relaxed text-subtitle">
@@ -324,8 +344,11 @@ export default function About() {
               </div>
 
               <div className="rounded-xl border border-border bg-bg p-4 sm:rounded-2xl">
-                <div className="flex aspect-[4/5] items-center justify-center rounded-xl bg-muted px-4 text-center text-sm text-text/60 sm:text-base">
-                  {about.values.imagePlaceholder}
+                <div className="aspect-[4/5] overflow-hidden rounded-xl bg-muted">
+                  <ContentImage
+                    src={siteImages.about.values}
+                    alt={about.values.imageCaption}
+                  />
                 </div>
 
                 <p className="mt-3 text-sm leading-relaxed text-subtitle">
