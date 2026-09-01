@@ -1,142 +1,71 @@
-# Ativa Pesquisas — Institutional Website (Portfolio)
+# Ativa Pesquisas
 
-An institutional “showcase” website for **Ativa Pesquisas**, built as a portfolio project with a strong emphasis on technical credibility (biocorrosion mitigation, ecological by-products, alternative binders, and sustainable durability in aggressive environments).
+Institutional and demonstration website for **Ativa Pesquisas**, a startup focused on research and development of special applications for mitigating biocorrosion in concrete structures. The project presents the company, its visual identity, technical work, and applications in a clear and accessible way.
 
----
+[Visit the website](https://ativapesquisas.com.br)
 
-## Tech Stack
+## About the project
 
-- **React + Vite**
-- **TypeScript**
-- **React Router DOM** (multi-page routing)
-- **Tailwind CSS v4** via **@tailwindcss/vite** (no `tailwindcss init -p`)
+This is a content-focused website created to introduce Ativa Pesquisas and its work with durability, performance, and sustainability in aggressive environments. It includes institutional pages, responsive layouts, and content in Portuguese and English.
 
----
+## Technologies
 
-## Pages (v1 sitemap)
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Embla Carousel
+- Vercel
 
-- Home
-- Technology
-- Applications
-- About
-- Projects
-- Contact
-- NotFound (404 fallback)
+## Running locally
 
----
-
-## Requirements
-
-- **Node.js (LTS recommended)**
-- **npm** (bundled with Node)
-
-Check versions:
-
-```bash
-node -v
-npm -v
-```
-
----
-
-## Run Locally (Development / Testing)
-
-1. Install dependencies:
+With [Node.js](https://nodejs.org/) installed, run:
 
 ```bash
 npm install
-```
-
-2. Start the dev server:
-
-```bash
 npm run dev
 ```
 
-Vite will print the local URL (commonly `http://localhost:5173`).
+Vite will display the local development URL in the terminal.
 
-> Vite uses HMR (Hot Module Replacement): save your files and the browser updates instantly.
+## Author
+
+Developed by [Lucas Kwok](https://github.com/lucasokwok).
 
 ---
 
-## Production Build & Preview
+## Português
 
-Build:
+Site institucional e demonstrativo da **Ativa Pesquisas**, startup voltada à pesquisa e ao desenvolvimento de aplicações especiais para mitigação da biocorrosão em estruturas de concreto. O projeto apresenta a empresa, sua identidade visual, atuação técnica e aplicações de forma clara e acessível.
+
+[Acesse o site](https://ativapesquisas.com.br)
+
+### Sobre o projeto
+
+Este é um site focado em conteúdo, criado para apresentar a Ativa Pesquisas e seu trabalho com durabilidade, desempenho e sustentabilidade em ambientes agressivos. Inclui páginas institucionais, layouts responsivos e conteúdo em português e inglês.
+
+### Tecnologias
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Embla Carousel
+- Vercel
+
+### Executando localmente
+
+Com o [Node.js](https://nodejs.org/) instalado, execute:
 
 ```bash
-npm run build
+npm install
+npm run dev
 ```
 
-Preview the production build locally:
+O Vite exibirá no terminal o endereço local de desenvolvimento.
 
-```bash
-npm run preview
-```
+### Autor
 
----
-
-## Project Structure (Essential)
-
-```txt
-src/
-  assets/           # images (e.g., home-hero-01.webp, etc.)
-  components/
-    Header.tsx
-    Footer.tsx
-  layouts/
-    SiteLayout.tsx
-  pages/
-    Home.tsx
-    Technology.tsx
-    Applications.tsx
-    About.tsx
-    Projects.tsx
-    Contact.tsx
-    NotFound.tsx
-  router.tsx
-  main.tsx
-  index.css
-```
-
----
-
-## Conventions
-
-### Commit Messages
-
-Recommended: **Conventional Commits** (preferably in English):
-
-- `feat: ...`
-- `fix: ...`
-- `chore: ...`
-- `style: ...`
-
-Examples:
-
-- `feat: add hero image grid to home`
-- `chore: configure tailwind vite plugin`
-
-### Asset Naming
-
-For a clear and consistent order:
-
-- `src/assets/home/home-hero-01.webp`
-- `src/assets/home/home-hero-02.webp`
-- `src/assets/home/home-hero-03.webp`
-
-Use lowercase, hyphens, and zero-padded numbering (`01`, `02`, `03`).
-
----
-
-## Notes
-
-- This project currently **does not use** `.env` files (no environment secrets/config needed).
-- Layout is designed in an **industrial clean** style: text sections are typically constrained for readability, while image sections can be wider (hero).
-
----
-
-## Scripts (Quick Reference)
-
-- `npm run dev` — start development server
-- `npm run build` — create production build
-- `npm run preview` — preview production build locally
+Desenvolvido por [Lucas Kwok](https://github.com/lucasokwok).
